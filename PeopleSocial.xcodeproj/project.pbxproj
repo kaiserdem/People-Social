@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1498C2A80C1F2F4C55EA994E /* Pods_PeopleSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */; };
 		ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */; };
 		ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3C21DE4E85008B7455 /* ViewController.swift */; };
-		ADF19D4021DE4E85008B7455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D3E21DE4E85008B7455 /* Main.storyboard */; };
 		ADF19D4221DE4E87008B7455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D4121DE4E87008B7455 /* Assets.xcassets */; };
 		ADF19D4521DE4E87008B7455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D4321DE4E87008B7455 /* LaunchScreen.storyboard */; };
 		ADF19D5021DE4E87008B7455 /* PeopleSocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D4F21DE4E87008B7455 /* PeopleSocialTests.swift */; };
+		ADF19D5B21DE4ED8008B7455 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D5A21DE4ED8008B7455 /* GoogleService-Info.plist */; };
+		ADF19D9321DE535E008B7455 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D9221DE535E008B7455 /* ViewController.xib */; };
+		ADF19D9521DE6230008B7455 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D9421DE6230008B7455 /* Router.swift */; };
+		ADF19D9821DE6ADF008B7455 /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D9721DE6ADF008B7455 /* StartRouter.swift */; };
+		ADF19D9C21DE6BC9008B7455 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D9A21DE6BC9008B7455 /* RegisterViewController.swift */; };
+		ADF19D9D21DE6BC9008B7455 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D9B21DE6BC9008B7455 /* RegisterViewController.xib */; };
+		ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D9F21DE6BE9008B7455 /* LoginViewController.swift */; };
+		ADF19DA221DE6BE9008B7455 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF19DA021DE6BE9008B7455 /* LoginViewController.xib */; };
+		ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DA421DE7009008B7455 /* PhotoView.swift */; };
+		ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DA621DE703E008B7455 /* Extention+View.swift */; };
+		ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DA821DE71EF008B7455 /* HeigtContainable.swift */; };
+		ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DAA21DE7388008B7455 /* NibLoadable.swift */; };
+		ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DAC21DE75BA008B7455 /* Typealias.swift */; };
+		ADF19DAF21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DAE21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift */; };
+		ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DB621DE8265008B7455 /* InfoUserTableViewCell.swift */; };
+		ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF19DB721DE8265008B7455 /* InfoUserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +42,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.release.xcconfig"; sourceTree = "<group>"; };
+		8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.debug.xcconfig"; sourceTree = "<group>"; };
+		A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF19D3721DE4E85008B7455 /* PeopleSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF19D3C21DE4E85008B7455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADF19D3F21DE4E85008B7455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADF19D4121DE4E87008B7455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADF19D4421DE4E87008B7455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADF19D4621DE4E87008B7455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADF19D4B21DE4E87008B7455 /* PeopleSocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleSocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF19D4F21DE4E87008B7455 /* PeopleSocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSocialTests.swift; sourceTree = "<group>"; };
-		ADF19D5121DE4E87008B7455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF19D5121DE4E87008B7455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PeopleSocialTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		ADF19D5A21DE4ED8008B7455 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADF19D9221DE535E008B7455 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		ADF19D9421DE6230008B7455 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		ADF19D9721DE6ADF008B7455 /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
+		ADF19D9A21DE6BC9008B7455 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ADF19D9B21DE6BC9008B7455 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		ADF19D9F21DE6BE9008B7455 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ADF19DA021DE6BE9008B7455 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		ADF19DA421DE7009008B7455 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		ADF19DA621DE703E008B7455 /* Extention+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+View.swift"; sourceTree = "<group>"; };
+		ADF19DA821DE71EF008B7455 /* HeigtContainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeigtContainable.swift; sourceTree = "<group>"; };
+		ADF19DAA21DE7388008B7455 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		ADF19DAC21DE75BA008B7455 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		ADF19DAE21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Evtentions+NSLayautConstraint.swift"; sourceTree = "<group>"; };
+		ADF19DB621DE8265008B7455 /* InfoUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUserTableViewCell.swift; sourceTree = "<group>"; };
+		ADF19DB721DE8265008B7455 /* InfoUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoUserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1498C2A80C1F2F4C55EA994E /* Pods_PeopleSocial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		636E6C2A6026AC711BE1F12D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */,
+				769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ADF19D2E21DE4E85008B7455 = {
 			isa = PBXGroup;
 			children = (
 				ADF19D3921DE4E85008B7455 /* PeopleSocial */,
 				ADF19D4E21DE4E87008B7455 /* PeopleSocialTests */,
 				ADF19D3821DE4E85008B7455 /* Products */,
+				636E6C2A6026AC711BE1F12D /* Pods */,
+				E8F32F924432343DFB0D2791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +123,11 @@
 		ADF19D3921DE4E85008B7455 /* PeopleSocial */ = {
 			isa = PBXGroup;
 			children = (
-				ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */,
-				ADF19D3C21DE4E85008B7455 /* ViewController.swift */,
-				ADF19D3E21DE4E85008B7455 /* Main.storyboard */,
-				ADF19D4121DE4E87008B7455 /* Assets.xcassets */,
-				ADF19D4321DE4E87008B7455 /* LaunchScreen.storyboard */,
 				ADF19D4621DE4E87008B7455 /* Info.plist */,
+				ADF19D5A21DE4ED8008B7455 /* GoogleService-Info.plist */,
+				ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */,
+				ADF19D8821DE5209008B7455 /* Classes */,
+				ADF19D8921DE521F008B7455 /* Resourses */,
 			);
 			path = PeopleSocial;
 			sourceTree = "<group>";
@@ -96,6 +141,142 @@
 			path = PeopleSocialTests;
 			sourceTree = "<group>";
 		};
+		ADF19D8821DE5209008B7455 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19D9021DE528A008B7455 /* Screens */,
+				ADF19D8A21DE5231008B7455 /* Protocols */,
+				ADF19D8B21DE5240008B7455 /* Cells */,
+				ADF19D8C21DE524D008B7455 /* CustomViews */,
+				ADF19D8D21DE525B008B7455 /* Models */,
+				ADF19D8E21DE5268008B7455 /* Extentions */,
+				ADF19D8F21DE527B008B7455 /* Routers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ADF19D8921DE521F008B7455 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19D4321DE4E87008B7455 /* LaunchScreen.storyboard */,
+				ADF19D4121DE4E87008B7455 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		ADF19D8A21DE5231008B7455 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19DA821DE71EF008B7455 /* HeigtContainable.swift */,
+				ADF19DAA21DE7388008B7455 /* NibLoadable.swift */,
+				ADF19DAC21DE75BA008B7455 /* Typealias.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ADF19D8B21DE5240008B7455 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19DB521DE823F008B7455 /* InfoUserCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ADF19D8C21DE524D008B7455 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19DA321DE6FD2008B7455 /* PhotoView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		ADF19D8D21DE525B008B7455 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADF19D8E21DE5268008B7455 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19DA621DE703E008B7455 /* Extention+View.swift */,
+				ADF19DAE21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		ADF19D8F21DE527B008B7455 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19D9421DE6230008B7455 /* Router.swift */,
+				ADF19D9721DE6ADF008B7455 /* StartRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		ADF19D9021DE528A008B7455 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19D9E21DE6BCF008B7455 /* LoginVC */,
+				ADF19D9921DE6B94008B7455 /* RegisterVC */,
+				ADF19D9621DE691B008B7455 /* Start */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		ADF19D9621DE691B008B7455 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19D3C21DE4E85008B7455 /* ViewController.swift */,
+				ADF19D9221DE535E008B7455 /* ViewController.xib */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		ADF19D9921DE6B94008B7455 /* RegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19D9A21DE6BC9008B7455 /* RegisterViewController.swift */,
+				ADF19D9B21DE6BC9008B7455 /* RegisterViewController.xib */,
+			);
+			path = RegisterVC;
+			sourceTree = "<group>";
+		};
+		ADF19D9E21DE6BCF008B7455 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19D9F21DE6BE9008B7455 /* LoginViewController.swift */,
+				ADF19DA021DE6BE9008B7455 /* LoginViewController.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		ADF19DA321DE6FD2008B7455 /* PhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19DA421DE7009008B7455 /* PhotoView.swift */,
+			);
+			path = PhotoView;
+			sourceTree = "<group>";
+		};
+		ADF19DB521DE823F008B7455 /* InfoUserCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADF19DB621DE8265008B7455 /* InfoUserTableViewCell.swift */,
+				ADF19DB721DE8265008B7455 /* InfoUserTableViewCell.xib */,
+			);
+			path = InfoUserCell;
+			sourceTree = "<group>";
+		};
+		E8F32F924432343DFB0D2791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADF19D5421DE4E87008B7455 /* Build configuration list for PBXNativeTarget "PeopleSocial" */;
 			buildPhases = (
+				87495846101B9CEF0E97939B /* [CP] Check Pods Manifest.lock */,
 				ADF19D3321DE4E85008B7455 /* Sources */,
 				ADF19D3421DE4E85008B7455 /* Frameworks */,
 				ADF19D3521DE4E85008B7455 /* Resources */,
+				1EF867FB16E04C774DFEFDFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,8 +361,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF19D4521DE4E87008B7455 /* LaunchScreen.storyboard in Resources */,
+				ADF19D9D21DE6BC9008B7455 /* RegisterViewController.xib in Resources */,
+				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
+				ADF19DA221DE6BE9008B7455 /* LoginViewController.xib in Resources */,
+				ADF19D5B21DE4ED8008B7455 /* GoogleService-Info.plist in Resources */,
+				ADF19D9321DE535E008B7455 /* ViewController.xib in Resources */,
 				ADF19D4221DE4E87008B7455 /* Assets.xcassets in Resources */,
-				ADF19D4021DE4E85008B7455 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +379,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EF867FB16E04C774DFEFDFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ARSLineProgress/ARSLineProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARSLineProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87495846101B9CEF0E97939B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeopleSocial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADF19D3321DE4E85008B7455 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */,
+				ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */,
+				ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */,
 				ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */,
+				ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */,
+				ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */,
+				ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */,
+				ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */,
+				ADF19D9C21DE6BC9008B7455 /* RegisterViewController.swift in Sources */,
+				ADF19D9521DE6230008B7455 /* Router.swift in Sources */,
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,
+				ADF19DAF21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift in Sources */,
+				ADF19D9821DE6ADF008B7455 /* StartRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +476,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ADF19D3E21DE4E85008B7455 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADF19D3F21DE4E85008B7455 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADF19D4321DE4E87008B7455 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +605,7 @@
 		};
 		ADF19D5521DE4E87008B7455 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +624,7 @@
 		};
 		ADF19D5621DE4E87008B7455 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_PeopleSocial {
+  umbrella header "Pods-PeopleSocial-umbrella.h"
+
+  export *
+  module * { export * }
+}
