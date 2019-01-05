@@ -17,36 +17,35 @@ class PhotoView: UIView {
   override func didMoveToSuperview() {
     super.didMoveToSuperview()
     
-    Decorator.layoutSubviews(self)
+    Decorator.decorator(self)
     addPlussView()
-//    addImageView()
-//    addLable()
+    addImageView()
+    addLable()
   }
   private func addLable() {
     lable.text = "Photo"
     lable.translatesAutoresizingMaskIntoConstraints = false
     lable.textAlignment = .center
-    lable.font = UIFont.systemFont(ofSize: 12)
+    lable.font = UIFont.systemFont(ofSize: 14)
     lable.textColor = #colorLiteral(red: 0.2980392157, green: 0.4588235294, blue: 0.6392156863, alpha: 1)
     addSubview(lable)
-    lable.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.25).isActive = true
-    lable.widthAnchor.constraint(equalTo: heightAnchor).isActive = true
     
-    //let constraints = NSLayoutConstraint.constrains(withNewVisyalFormat: "H:|[lable]|,V:|-45-[lable]", dict: ["lable": lable])
-    //addConstraints(constraints)
+    lable.leftAnchor.constraint(equalTo: plusView.leftAnchor, constant: -5).isActive = true
+    lable.topAnchor.constraint(equalTo: plusView.bottomAnchor, constant: 3).isActive = true
+    lable.widthAnchor.constraint(equalToConstant: 40).isActive = true
   }
   
   private func addImageView() {
     imageView.translatesAutoresizingMaskIntoConstraints = false
-    imageView.isHidden = true
+    //imageView.isHidden = true
     imageView.contentMode = .scaleAspectFill
-    imageView.clipsToBounds = true
+    //imageView.clipsToBounds = true
+    imageView.backgroundColor = .green
     addSubview(imageView)
-    imageView.heightAnchor.constraint(equalToConstant: 10)
-    imageView.widthAnchor.constraint(equalToConstant: 30)
+    imageView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
+    imageView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
     
-    //let constraints = NSLayoutConstraint.constrains(withNewVisyalFormat: "H:|[imageView]|,V:[imageView]|", dict: ["imageView": imageView])
-    //addConstraints(constraints)
+    
   }
   private func addPlussView() {
     plusView.translatesAutoresizingMaskIntoConstraints = false
@@ -54,12 +53,11 @@ class PhotoView: UIView {
     plusView.tintColor = #colorLiteral(red: 0.2980392157, green: 0.4588235294, blue: 0.6392156863, alpha: 1)
     plusView.image = #imageLiteral(resourceName: "plus")
     addSubview(plusView)
-    plusView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
-    plusView.topAnchor.constraint(equalTo: topAnchor, constant: 16).isActive = true
-    plusView.widthAnchor.constraint(equalTo: plusView.heightAnchor).isActive = true
-    plusView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
-    //let constraints = NSLayoutConstraint.constrains(withNewVisyalFormat: "H:|[plusView]|,V:|-15-[plusView(\(frame.height * 0.4))][lable]", dict: ["lable": lable, "plusView": plusView])
-    //addConstraints(constraints)
+    
+    plusView.leftAnchor.constraint(equalTo: leftAnchor, constant: 35).isActive = true
+    plusView.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
+    plusView.widthAnchor.constraint(equalToConstant: 25).isActive = true
+    plusView.heightAnchor.constraint(equalTo: plusView.widthAnchor).isActive = true
   }
   
   override func layoutSubviews() {
