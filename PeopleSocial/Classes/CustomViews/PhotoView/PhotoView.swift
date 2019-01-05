@@ -19,8 +19,8 @@ class PhotoView: UIView {
     
     Decorator.layoutSubviews(self)
     addPlussView()
-    addImageView()
-    addLable()
+//    addImageView()
+//    addLable()
   }
   private func addLable() {
     lable.text = "Photo"
@@ -49,14 +49,15 @@ class PhotoView: UIView {
     //addConstraints(constraints)
   }
   private func addPlussView() {
-    plusView.translatesAutoresizingMaskIntoConstraints = true
-    plusView.contentMode = .scaleAspectFit
+    plusView.translatesAutoresizingMaskIntoConstraints = false
+    plusView.contentMode = .scaleAspectFill
     plusView.tintColor = #colorLiteral(red: 0.2980392157, green: 0.4588235294, blue: 0.6392156863, alpha: 1)
     plusView.image = #imageLiteral(resourceName: "plus")
     addSubview(plusView)
-    plusView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.25).isActive = true
-    plusView.widthAnchor.constraint(equalTo: heightAnchor).isActive = true
-    
+    plusView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
+    plusView.topAnchor.constraint(equalTo: topAnchor, constant: 16).isActive = true
+    plusView.widthAnchor.constraint(equalTo: plusView.heightAnchor).isActive = true
+    plusView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
     //let constraints = NSLayoutConstraint.constrains(withNewVisyalFormat: "H:|[plusView]|,V:|-15-[plusView(\(frame.height * 0.4))][lable]", dict: ["lable": lable, "plusView": plusView])
     //addConstraints(constraints)
   }

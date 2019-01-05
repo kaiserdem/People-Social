@@ -68,6 +68,6 @@ extension RegisterViewController: UITableViewDataSource {
       }
     default: break
     }
-    return  UITableViewCell()
+    return UITableViewCell()
   }
 }
