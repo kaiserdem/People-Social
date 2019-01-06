@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1498C2A80C1F2F4C55EA994E /* Pods_PeopleSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */; };
+		AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4033AE21E226E700107713 /* HeaderTitleView.swift */; };
+		AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4033B221E228BE00107713 /* HeaderTitleView.xib */; };
 		ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */; };
 		ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3C21DE4E85008B7455 /* ViewController.swift */; };
 		ADF19D4221DE4E87008B7455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D4121DE4E87008B7455 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.release.xcconfig"; sourceTree = "<group>"; };
 		8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4033AE21E226E700107713 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
+		AD4033B221E228BE00107713 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
 		ADF19D3721DE4E85008B7455 /* PeopleSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF19D3C21DE4E85008B7455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AD4033AD21E226DB00107713 /* HeaderTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				AD4033AE21E226E700107713 /* HeaderTitleView.swift */,
+				AD4033B221E228BE00107713 /* HeaderTitleView.xib */,
+			);
+			path = HeaderTitleView;
+			sourceTree = "<group>";
+		};
 		ADF19D2E21DE4E85008B7455 = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +159,6 @@
 			children = (
 				ADF19D9021DE528A008B7455 /* Screens */,
 				ADF19D8A21DE5231008B7455 /* Protocols */,
-				ADF19D8B21DE5240008B7455 /* Cells */,
 				ADF19D8C21DE524D008B7455 /* CustomViews */,
 				ADF19D8D21DE525B008B7455 /* Models */,
 				ADF19D8E21DE5268008B7455 /* Extentions */,
@@ -185,6 +197,8 @@
 		ADF19D8C21DE524D008B7455 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				AD4033AD21E226DB00107713 /* HeaderTitleView */,
+				ADF19D8B21DE5240008B7455 /* Cells */,
 				ADF19DA321DE6FD2008B7455 /* PhotoView */,
 			);
 			path = CustomViews;
@@ -362,6 +376,7 @@
 			files = (
 				ADF19D4521DE4E87008B7455 /* LaunchScreen.storyboard in Resources */,
 				ADF19D9D21DE6BC9008B7455 /* RegisterViewController.xib in Resources */,
+				AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */,
 				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
 				ADF19DA221DE6BE9008B7455 /* LoginViewController.xib in Resources */,
 				ADF19D5B21DE4ED8008B7455 /* GoogleService-Info.plist in Resources */,
@@ -443,6 +458,7 @@
 			files = (
 				ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */,
 				ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */,
+				AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */,
 				ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */,
 				ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */,
 				ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */,

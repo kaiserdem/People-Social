@@ -17,6 +17,7 @@ class RegisterViewController: UIViewController, NibLoadable {
   override func viewDidLoad() {
         super.viewDidLoad()
     
+    Decorator.decorate(vc: self)
     title = "Registration"
     registerCells()
     delegating()
@@ -41,6 +42,17 @@ extension RegisterViewController {
     case userInfo
     case sex
     case bithday
+  }
+}
+extension RegisterViewController {
+  private static let tableViewTopInsert: CGFloat = 16  //отступ сверху
+  fileprivate class Decorator {
+    static func decorate(vc: RegisterViewController) {
+      vc.tableView.separatorColor = .clear // края таблицы не видно
+      vc.tableView.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.9450980392, blue: 0.9450980392, alpha: 1) // цвет таблицы
+      vc.navigationController?.navigationBar.prefersLargeTitles = true
+      vc.tableView.contentInset = UIEdgeInsets(top: tableViewTopInsert, left: 0, bottom: 0, right: 0)
+    }
   }
 }
 extension RegisterViewController: UITableViewDelegate {

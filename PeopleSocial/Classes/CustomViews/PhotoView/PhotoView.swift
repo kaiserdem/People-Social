@@ -54,9 +54,9 @@ class PhotoView: UIView {
     plusView.image = #imageLiteral(resourceName: "plus")
     addSubview(plusView)
     
-    plusView.leftAnchor.constraint(equalTo: leftAnchor, constant: 22).isActive = true
-    plusView.topAnchor.constraint(equalTo: topAnchor, constant: 15).isActive = true
-    plusView.widthAnchor.constraint(equalToConstant: 26).isActive = true
+    plusView.leftAnchor.constraint(equalTo: leftAnchor, constant: 26).isActive = true
+    plusView.topAnchor.constraint(equalTo: topAnchor, constant: 18).isActive = true
+    plusView.widthAnchor.constraint(equalToConstant: 27).isActive = true
     plusView.heightAnchor.constraint(equalTo: plusView.widthAnchor).isActive = true
   }
   
