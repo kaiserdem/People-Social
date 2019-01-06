@@ -10,19 +10,24 @@ import UIKit
 
 class InfoUserTableViewCell: UITableViewCell, StaticCellProtocol {
   
+  @IBOutlet weak var photoView: PhotoView!
+  
   static var heigth: CGFloat {
     return 100
   }
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
-    //contentView.backgroundColor = .yellow
+    Decoretor.decorator(cell: self)
   }
   
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-    
-    // Configure the view for the selected state
+}
+
+extension InfoUserTableViewCell {
+  fileprivate class Decoretor {
+    static func decorator(cell: InfoUserTableViewCell) {
+      cell.selectionStyle = .none // что б ячейка не выделялась
+      cell.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.9450980392, blue: 0.9450980392, alpha: 1) // цвет ячейки
+    }
   }
 }

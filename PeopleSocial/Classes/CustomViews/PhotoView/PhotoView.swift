@@ -10,14 +10,16 @@ import UIKit
 
 class PhotoView: UIView {
   
-  private let imageView = UIImageView()
+  private var imageView = UIImageView()
   private let lable = UILabel()
   private let plusView = UIImageView()
+  private let button = UIButton()
 
   override func didMoveToSuperview() {
     super.didMoveToSuperview()
     
     Decorator.decorator(self)
+    
     addPlussView()
     addImageView()
     addLable()
@@ -26,26 +28,24 @@ class PhotoView: UIView {
     lable.text = "Photo"
     lable.translatesAutoresizingMaskIntoConstraints = false
     lable.textAlignment = .center
-    lable.font = UIFont.systemFont(ofSize: 14)
+    lable.font = UIFont.systemFont(ofSize: 12)
     lable.textColor = #colorLiteral(red: 0.2980392157, green: 0.4588235294, blue: 0.6392156863, alpha: 1)
     addSubview(lable)
     
-    lable.leftAnchor.constraint(equalTo: plusView.leftAnchor, constant: -5).isActive = true
-    lable.topAnchor.constraint(equalTo: plusView.bottomAnchor, constant: 3).isActive = true
+    lable.leftAnchor.constraint(equalTo: plusView.leftAnchor, constant: -7).isActive = true
+    lable.topAnchor.constraint(equalTo: plusView.bottomAnchor, constant: 2).isActive = true
     lable.widthAnchor.constraint(equalToConstant: 40).isActive = true
   }
   
   private func addImageView() {
     imageView.translatesAutoresizingMaskIntoConstraints = false
-    //imageView.isHidden = true
+    imageView.isHidden = false
     imageView.contentMode = .scaleAspectFill
-    //imageView.clipsToBounds = true
-    imageView.backgroundColor = .green
+    imageView.clipsToBounds = true
     addSubview(imageView)
-    imageView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
-    imageView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
     
-    
+    //imageView.heightAnchor.constraint(equalToConstant: 65).isActive = true
+    //imageView.widthAnchor.constraint(equalToConstant: 65).isActive = true
   }
   private func addPlussView() {
     plusView.translatesAutoresizingMaskIntoConstraints = false
@@ -54,9 +54,9 @@ class PhotoView: UIView {
     plusView.image = #imageLiteral(resourceName: "plus")
     addSubview(plusView)
     
-    plusView.leftAnchor.constraint(equalTo: leftAnchor, constant: 35).isActive = true
-    plusView.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
-    plusView.widthAnchor.constraint(equalToConstant: 25).isActive = true
+    plusView.leftAnchor.constraint(equalTo: leftAnchor, constant: 22).isActive = true
+    plusView.topAnchor.constraint(equalTo: topAnchor, constant: 15).isActive = true
+    plusView.widthAnchor.constraint(equalToConstant: 26).isActive = true
     plusView.heightAnchor.constraint(equalTo: plusView.widthAnchor).isActive = true
   }
   
@@ -75,8 +75,8 @@ extension PhotoView {
       view.layer.borderWidth = 1
     }
     static func layoutSubviews(_ view: PhotoView) {
-      view.round()
-      view.imageView.round()
+    view.round()
+    view.backgroundColor = .white
 
     }
   }

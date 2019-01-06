@@ -19,21 +19,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-QJ-d0Z" userLabel="Photo View" customClass="PhotoView" customModule="PeopleSocial" customModuleProvider="target">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-QJ-d0Z" userLabel="Photo View" customClass="PhotoView" customModule="PeopleSocial" customModuleProvider="target">
                         <rect key="frame" x="16" y="16" width="69.5" height="67.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                <constraints>
-                    <constraint firstItem="q0F-QJ-d0Z" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="23:33" id="3rr-Nr-Yg2"/>
-                    <constraint firstItem="q0F-QJ-d0Z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BE6-rr-Tqo"/>
-                    <constraint firstItem="q0F-QJ-d0Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="HS7-4k-6XV"/>
-                    <constraint firstItem="q0F-QJ-d0Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="VSi-2D-Uwg"/>
-                </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="photoView" destination="q0F-QJ-d0Z" id="ITR-ss-A5p"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
