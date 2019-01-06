@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2o-Tp-kRU">
-                    <rect key="frame" x="16" y="21" width="68.5" height="23"/>
+                    <rect key="frame" x="12" y="21" width="68.5" height="23"/>
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <color key="textColor" name="darkGrayColor"/>
                     <nil key="highlightedColor"/>
@@ -27,7 +27,7 @@
             <color key="backgroundColor" name="grayColor"/>
             <constraints>
                 <constraint firstItem="r2o-Tp-kRU" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="56v-UB-ln4"/>
-                <constraint firstItem="r2o-Tp-kRU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="tNe-Os-NwG"/>
+                <constraint firstItem="r2o-Tp-kRU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="tNe-Os-NwG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

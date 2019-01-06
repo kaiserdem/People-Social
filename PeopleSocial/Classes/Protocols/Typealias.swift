@@ -7,5 +7,8 @@
 //
 
 import Foundation
-                     // обединили несколько протоколов
+                          // обединили несколько протоколов
 typealias StaticCellProtocol = NibLoadable & HeigtContainable
+
+typealias ItemClosure<T> = ((T) -> Void) // дженерик,клоужер  возвращает 
+

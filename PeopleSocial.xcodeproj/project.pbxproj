@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1498C2A80C1F2F4C55EA994E /* Pods_PeopleSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */; };
 		AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */; };
+		AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */; };
+		AD3370D521E24A8100EA3F96 /* SegmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3370D321E24A8100EA3F96 /* SegmentTableViewCell.xib */; };
+		AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370D721E2594B00EA3F96 /* TextTableViewCell.swift */; };
+		AD3370DA21E2594B00EA3F96 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3370D821E2594B00EA3F96 /* TextTableViewCell.xib */; };
+		AD3370DE21E2651D00EA3F96 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370DC21E2651D00EA3F96 /* TextFieldTableViewCell.swift */; };
+		AD3370DF21E2651D00EA3F96 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3370DD21E2651D00EA3F96 /* TextFieldTableViewCell.xib */; };
 		AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4033AE21E226E700107713 /* HeaderTitleView.swift */; };
 		AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4033B221E228BE00107713 /* HeaderTitleView.xib */; };
 		ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */; };
@@ -49,6 +55,12 @@
 		8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeaderProtocol.swift; sourceTree = "<group>"; };
+		AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTableViewCell.swift; sourceTree = "<group>"; };
+		AD3370D321E24A8100EA3F96 /* SegmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentTableViewCell.xib; sourceTree = "<group>"; };
+		AD3370D721E2594B00EA3F96 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		AD3370D821E2594B00EA3F96 /* TextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
+		AD3370DC21E2651D00EA3F96 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		AD3370DD21E2651D00EA3F96 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		AD4033AE21E226E700107713 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
 		AD4033B221E228BE00107713 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
 		ADF19D3721DE4E85008B7455 /* PeopleSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +116,33 @@
 				769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD3370D121E249C100EA3F96 /* SegmentCell */ = {
+			isa = PBXGroup;
+			children = (
+				AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */,
+				AD3370D321E24A8100EA3F96 /* SegmentTableViewCell.xib */,
+			);
+			path = SegmentCell;
+			sourceTree = "<group>";
+		};
+		AD3370D621E2592E00EA3F96 /* TextCell */ = {
+			isa = PBXGroup;
+			children = (
+				AD3370D721E2594B00EA3F96 /* TextTableViewCell.swift */,
+				AD3370D821E2594B00EA3F96 /* TextTableViewCell.xib */,
+			);
+			path = TextCell;
+			sourceTree = "<group>";
+		};
+		AD3370DB21E2645E00EA3F96 /* TextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				AD3370DC21E2651D00EA3F96 /* TextFieldTableViewCell.swift */,
+				AD3370DD21E2651D00EA3F96 /* TextFieldTableViewCell.xib */,
+			);
+			path = TextFieldCell;
 			sourceTree = "<group>";
 		};
 		AD4033AD21E226DB00107713 /* HeaderTitleView */ = {
@@ -192,6 +231,9 @@
 		ADF19D8B21DE5240008B7455 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AD3370DB21E2645E00EA3F96 /* TextFieldCell */,
+				AD3370D621E2592E00EA3F96 /* TextCell */,
+				AD3370D121E249C100EA3F96 /* SegmentCell */,
 				ADF19DB521DE823F008B7455 /* InfoUserCell */,
 			);
 			path = Cells;
@@ -380,8 +422,11 @@
 				ADF19D4521DE4E87008B7455 /* LaunchScreen.storyboard in Resources */,
 				ADF19D9D21DE6BC9008B7455 /* RegisterViewController.xib in Resources */,
 				AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */,
+				AD3370DF21E2651D00EA3F96 /* TextFieldTableViewCell.xib in Resources */,
 				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
 				ADF19DA221DE6BE9008B7455 /* LoginViewController.xib in Resources */,
+				AD3370D521E24A8100EA3F96 /* SegmentTableViewCell.xib in Resources */,
+				AD3370DA21E2594B00EA3F96 /* TextTableViewCell.xib in Resources */,
 				ADF19D5B21DE4ED8008B7455 /* GoogleService-Info.plist in Resources */,
 				ADF19D9321DE535E008B7455 /* ViewController.xib in Resources */,
 				ADF19D4221DE4E87008B7455 /* Assets.xcassets in Resources */,
@@ -470,8 +515,11 @@
 				ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */,
 				AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */,
 				ADF19D9C21DE6BC9008B7455 /* RegisterViewController.swift in Sources */,
+				AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */,
 				ADF19D9521DE6230008B7455 /* Router.swift in Sources */,
+				AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */,
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,
+				AD3370DE21E2651D00EA3F96 /* TextFieldTableViewCell.swift in Sources */,
 				ADF19DAF21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift in Sources */,
 				ADF19D9821DE6ADF008B7455 /* StartRouter.swift in Sources */,
 			);
