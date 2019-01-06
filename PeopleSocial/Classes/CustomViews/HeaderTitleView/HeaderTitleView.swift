@@ -9,5 +9,9 @@
 import UIKit
 
 class HeaderTitleView: UIView, NibLoadable {
+  @IBOutlet private weak var lable: UILabel!
   
+  func set(title: String) { // функция ставит тайтел 
+    lable.text = title
+  }
 }

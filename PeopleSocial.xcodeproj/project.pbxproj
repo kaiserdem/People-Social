@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1498C2A80C1F2F4C55EA994E /* Pods_PeopleSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */; };
+		AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */; };
 		AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4033AE21E226E700107713 /* HeaderTitleView.swift */; };
 		AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4033B221E228BE00107713 /* HeaderTitleView.xib */; };
 		ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.release.xcconfig"; sourceTree = "<group>"; };
 		8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeaderProtocol.swift; sourceTree = "<group>"; };
 		AD4033AE21E226E700107713 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
 		AD4033B221E228BE00107713 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
 		ADF19D3721DE4E85008B7455 /* PeopleSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 				ADF19DA821DE71EF008B7455 /* HeigtContainable.swift */,
 				ADF19DAA21DE7388008B7455 /* NibLoadable.swift */,
 				ADF19DAC21DE75BA008B7455 /* Typealias.swift */,
+				AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */,
 				ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */,
 				ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */,
+				AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */,
 				ADF19D9C21DE6BC9008B7455 /* RegisterViewController.swift in Sources */,
 				ADF19D9521DE6230008B7455 /* Router.swift in Sources */,
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,

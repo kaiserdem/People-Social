@@ -10,15 +10,15 @@ import UIKit
 
 class RegisterViewController: UIViewController, NibLoadable {
 
-  private var models: [CellModel] = [.userInfo]
+  private let models: [HeaderModel] = [.info, .sex, .bithday]
   
   @IBOutlet weak var tableView: UITableView!
   
   override func viewDidLoad() {
         super.viewDidLoad()
-    
-    Decorator.decorate(vc: self)
     title = "Registration"
+
+    Decorator.decorate(vc: self)
     registerCells()
     delegating()
 
@@ -35,13 +35,28 @@ class RegisterViewController: UIViewController, NibLoadable {
   private func registerCells() { // регистрируем ячейку
     tableView.register(InfoUserTableViewCell.nib, forCellReuseIdentifier: InfoUserTableViewCell.name)
   }
-
+  
 }
 extension RegisterViewController {
   fileprivate enum CellModel { // модель ячеек
     case userInfo
     case sex
     case bithday
+  }
+  fileprivate enum HeaderModel: CellHeaderProtocol {
+    typealias CellType = CellModel
+    case sex
+    case info
+    case bithday
+    
+    var cellModels: [RegisterViewController.CellModel] {
+      switch self {
+      case .sex: return [.sex]
+      case .info: return [.userInfo]
+      case .bithday: return [.bithday]
+        
+      }
+    }
   }
 }
 extension RegisterViewController {
@@ -58,7 +73,7 @@ extension RegisterViewController {
 extension RegisterViewController: UITableViewDelegate {
   // высота для ячейки
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    let model = models[indexPath.row]
+    let model = models[indexPath.section].cellModels[indexPath.row]
     switch model {
     case .userInfo: return 100
     default: return 0
@@ -67,12 +82,28 @@ extension RegisterViewController: UITableViewDelegate {
 }
 
 extension RegisterViewController: UITableViewDataSource {
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return models.count
-  }
-  
+                        // задаем ячейку для хедера
+  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    let headerModel = models[section]
+    switch headerModel {
+    case .sex:
+      let view = HeaderTitleView.loadFromNib() // эту ячейку по протоколу
+      view.set(title: "Gender:") //функция для тайтла
+      return view
+    default: return nil
+    }
+  }                          // высота хедера
+  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    let headerModel = models[section]
+    switch headerModel {
+    case .sex:
+      return 44
+    default:
+      return 0
+    }
+  }                                    // задаем ячейку
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let model = models[indexPath.row]
+    let model = models[indexPath.section].cellModels[indexPath.row]
     switch model {
     case .userInfo:
       if let cell = tableView.dequeueReusableCell(withIdentifier: InfoUserTableViewCell.name, for: indexPath) as? InfoUserTableViewCell {
@@ -81,5 +112,11 @@ extension RegisterViewController: UITableViewDataSource {
     default: break
     }
     return UITableViewCell()
+  }
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return models[section].cellModels.count
+  }
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 3
   }
 }
