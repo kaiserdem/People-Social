@@ -23,8 +23,8 @@
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PnI-xj-LE5">
                         <rect key="frame" x="7" y="7" width="306" height="29"/>
                         <segments>
-                            <segment title="First"/>
-                            <segment title="Second"/>
+                            <segment title="Male"/>
+                            <segment title="Female"/>
                         </segments>
                         <color key="tintColor" name="darkGrayColor"/>
                     </segmentedControl>

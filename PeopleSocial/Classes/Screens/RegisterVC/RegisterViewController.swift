@@ -11,7 +11,7 @@ import UIKit
 class RegisterViewController: UIViewController, NibLoadable {
 
   private let models: [HeaderModel] = [.info, .sex, .bithday]
-  
+  private var registerModel = RegisterModel()
   @IBOutlet weak var tableView: UITableView!
   
   private let dataPickerView: UIDatePicker = { // создали пикер
@@ -28,6 +28,7 @@ class RegisterViewController: UIViewController, NibLoadable {
     registerCells()
     delegating()
     configureDatePickerView()
+    addRightBarButton()
 
   }
   override func viewWillAppear(_ animated: Bool) {
@@ -39,22 +40,54 @@ class RegisterViewController: UIViewController, NibLoadable {
     tableView.delegate = self
     tableView.dataSource = self
   }
+  
+  func photoViewClicked() { // касание на фото вю
+    let imagePickerController = UIImagePickerController()
+    imagePickerController.delegate = self
+    imagePickerController.sourceType = .photoLibrary // показывать фотоальбом
+    present(imagePickerController, animated: true, completion: nil)// показываем контроллер
+  }
+  
   private func registerCells() { // регистрируем ячейку
     tableView.register(InfoUserTableViewCell.nib, forCellReuseIdentifier: InfoUserTableViewCell.name)
     
     tableView.register(SegmentTableViewCell.nib, forCellReuseIdentifier: SegmentTableViewCell.name)
     
     tableView.register(TextFieldTableViewCell.nib, forCellReuseIdentifier: TextFieldTableViewCell.name)
-
   }
-  private func configureDatePickerView() { // отображает пикер вю
+  
+  private func addRightBarButton() { // приавая кнопка мыши
+    let barButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(rightBarButtonClicked(sender:)))
+    navigationItem.rightBarButtonItem = barButton
+    
+  }
+  @objc private func rightBarButtonClicked(sender: UIBarButtonItem) {
+    guard registerModel.isFiled else { // если заполнено
+      showAlert(with: "Error", and: "Enter all fields") // если не заполнено
+      return
+    }
+  }
+  
+  private func configureDatePickerView() { // возраст,отображает пикер вю c
     dataPickerView.addTarget(self, action: #selector(datePickerChanged(sender:)), for: .valueChanged)
   }
   @objc private func datePickerChanged(sender: UIDatePicker) {
     let date = sender.date
-    print(date)
+    registerModel.birthday = date
   }
-  
+}
+
+extension RegisterViewController:UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+             // берем выбраное изображение
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    picker.dismiss(animated: true, completion: nil) // скрываем выбор фото
+    guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+      
+      return
+    }
+    registerModel.photo = image
+    tableView.reloadData()   // обновляем таблицу
+  }
 }
 extension RegisterViewController {
   fileprivate enum CellModel { // модель ячеек
@@ -119,12 +152,15 @@ extension RegisterViewController: UITableViewDataSource {
     case .sex, .bithday: return 44
     default: return 0
     }
-  }                                    // задаем ячейку
+  }
+  
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let model = models[indexPath.section].cellModels[indexPath.row]
     switch model {
     case .userInfo:
       if let cell = tableView.dequeueReusableCell(withIdentifier: InfoUserTableViewCell.name, for: indexPath) as? InfoUserTableViewCell {
+        cell.photoViewClicked = self.photoViewClicked // картинка
+        cell.set(image: registerModel.photo)
         return cell
       }
     case .sex:

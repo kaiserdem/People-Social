@@ -15,6 +15,9 @@
 		AD3370DA21E2594B00EA3F96 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3370D821E2594B00EA3F96 /* TextTableViewCell.xib */; };
 		AD3370DE21E2651D00EA3F96 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370DC21E2651D00EA3F96 /* TextFieldTableViewCell.swift */; };
 		AD3370DF21E2651D00EA3F96 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3370DD21E2651D00EA3F96 /* TextFieldTableViewCell.xib */; };
+		AD3370E321E2803000EA3F96 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370E221E2803000EA3F96 /* RegisterModel.swift */; };
+		AD3370E521E2809200EA3F96 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370E421E2809200EA3F96 /* Sex.swift */; };
+		AD3370E721E286CC00EA3F96 /* Extention+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370E621E286CC00EA3F96 /* Extention+UIViewController.swift */; };
 		AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4033AE21E226E700107713 /* HeaderTitleView.swift */; };
 		AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4033B221E228BE00107713 /* HeaderTitleView.xib */; };
 		ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */; };
@@ -61,6 +64,9 @@
 		AD3370D821E2594B00EA3F96 /* TextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
 		AD3370DC21E2651D00EA3F96 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		AD3370DD21E2651D00EA3F96 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		AD3370E221E2803000EA3F96 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		AD3370E421E2809200EA3F96 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
+		AD3370E621E286CC00EA3F96 /* Extention+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIViewController.swift"; sourceTree = "<group>"; };
 		AD4033AE21E226E700107713 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
 		AD4033B221E228BE00107713 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
 		ADF19D3721DE4E85008B7455 /* PeopleSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,10 +204,10 @@
 		ADF19D8821DE5209008B7455 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ADF19D8D21DE525B008B7455 /* Models */,
 				ADF19D9021DE528A008B7455 /* Screens */,
 				ADF19D8A21DE5231008B7455 /* Protocols */,
 				ADF19D8C21DE524D008B7455 /* CustomViews */,
-				ADF19D8D21DE525B008B7455 /* Models */,
 				ADF19D8E21DE5268008B7455 /* Extentions */,
 				ADF19D8F21DE527B008B7455 /* Routers */,
 			);
@@ -252,6 +258,8 @@
 		ADF19D8D21DE525B008B7455 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD3370E221E2803000EA3F96 /* RegisterModel.swift */,
+				AD3370E421E2809200EA3F96 /* Sex.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 			children = (
 				ADF19DA621DE703E008B7455 /* Extention+View.swift */,
 				ADF19DAE21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift */,
+				AD3370E621E286CC00EA3F96 /* Extention+UIViewController.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -504,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3370E521E2809200EA3F96 /* Sex.swift in Sources */,
 				ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */,
 				ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */,
 				AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */,
@@ -513,11 +523,13 @@
 				ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */,
 				ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */,
 				ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */,
+				AD3370E721E286CC00EA3F96 /* Extention+UIViewController.swift in Sources */,
 				AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */,
 				ADF19D9C21DE6BC9008B7455 /* RegisterViewController.swift in Sources */,
 				AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */,
 				ADF19D9521DE6230008B7455 /* Router.swift in Sources */,
 				AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */,
+				AD3370E321E2803000EA3F96 /* RegisterModel.swift in Sources */,
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,
 				AD3370DE21E2651D00EA3F96 /* TextFieldTableViewCell.swift in Sources */,
 				ADF19DAF21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift in Sources */,

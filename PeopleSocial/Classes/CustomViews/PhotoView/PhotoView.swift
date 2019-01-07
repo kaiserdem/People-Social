@@ -15,6 +15,9 @@ class PhotoView: UIView {
   private let plusView = UIImageView()
   private let button = UIButton()
 
+  var clicked: VoidClosure? // кложер вызывает
+  
+  
   override func didMoveToSuperview() {
     super.didMoveToSuperview()
     
@@ -23,7 +26,35 @@ class PhotoView: UIView {
     addPlussView()
     addImageView()
     addLable()
+    clipsToBounds = true // круглая вю
+
   }
+  //касание было окончено
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesEnded(touches, with: event)
+    clicked?()
+    lable.isHidden = true // скрыть лейбл
+
+  }
+  
+  func set(image: UIImage?) { // задать картинку
+    imageView.image = image
+    imageView.isHidden = image == nil // выключен когда image (равно) == nil
+  }
+  
+  private func addImageView() {
+    imageView.translatesAutoresizingMaskIntoConstraints = false
+    imageView.isHidden = true // изначально не видна на экране
+    imageView.contentMode = .scaleAspectFill
+    imageView.clipsToBounds = true
+    addSubview(imageView)
+    
+    //imageView.topAnchor.constraint(equalTo: imageView.topAnchor).isActive = true
+    //imageView.leftAnchor.constraint(equalTo: imageView.leftAnchor).isActive = true
+    let constraints = NSLayoutConstraint.constrains(withNewVisyalFormat: "H:|[imageView]|,V:|[imageView]|", dict: ["imageView" : imageView])
+    addConstraints(constraints)
+  }
+  
   private func addLable() {
     lable.text = "Photo"
     lable.translatesAutoresizingMaskIntoConstraints = false
@@ -35,17 +66,6 @@ class PhotoView: UIView {
     lable.leftAnchor.constraint(equalTo: plusView.leftAnchor, constant: -7).isActive = true
     lable.topAnchor.constraint(equalTo: plusView.bottomAnchor, constant: 2).isActive = true
     lable.widthAnchor.constraint(equalToConstant: 40).isActive = true
-  }
-  
-  private func addImageView() {
-    imageView.translatesAutoresizingMaskIntoConstraints = false
-    imageView.isHidden = false
-    imageView.contentMode = .scaleAspectFill
-    imageView.clipsToBounds = true
-    addSubview(imageView)
-    
-    //imageView.heightAnchor.constraint(equalToConstant: 65).isActive = true
-    //imageView.widthAnchor.constraint(equalToConstant: 65).isActive = true
   }
   private func addPlussView() {
     plusView.translatesAutoresizingMaskIntoConstraints = false
@@ -75,9 +95,8 @@ extension PhotoView {
       view.layer.borderWidth = 1
     }
     static func layoutSubviews(_ view: PhotoView) {
-    view.round()
-    view.backgroundColor = .white
-
+      view.round()
+      view.backgroundColor = .white
     }
   }
 }

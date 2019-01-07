@@ -13,15 +13,25 @@ class InfoUserTableViewCell: UITableViewCell, StaticCellProtocol {
   @IBOutlet weak var photoView: PhotoView!
   @IBOutlet weak var backgroundFieldView: UIView!
   
+  var photoViewClicked: VoidClosure? {
+    didSet {
+      photoView.clicked = photoViewClicked // по касанию задаетьяся картинка на фотовю
+    }
+  }
+  
   static var heigth: CGFloat {
     return 100
   }
   
   override func awakeFromNib() {
     super.awakeFromNib()
+    
     Decoretor.decorator(cell: self)
   }
   
+  func set(image: UIImage?) { // функция задает картинку
+    photoView.set(image: image)
+  }
 }
 
 extension InfoUserTableViewCell {
