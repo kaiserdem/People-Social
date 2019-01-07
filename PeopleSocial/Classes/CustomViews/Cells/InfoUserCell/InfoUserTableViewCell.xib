@@ -58,6 +58,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="backgroundFieldView" destination="8GF-L2-hb5" id="mbd-Ws-ha9"/>
+                <outlet property="emailTextField" destination="vTw-ql-wyh" id="yAM-km-c4E"/>
+                <outlet property="passwordTextField" destination="yhD-M7-UKz" id="ks0-nL-nIv"/>
                 <outlet property="photoView" destination="q0F-QJ-d0Z" id="ITR-ss-A5p"/>
             </connections>
             <point key="canvasLocation" x="140.80000000000001" y="154.72263868065968"/>

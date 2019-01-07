@@ -20,7 +20,13 @@ class SegmentTableViewCell: UITableViewCell, NibLoadable {
     selectionStyle = .none // ячейку нельзя выделять
     addTargets()
   }
-  
+  func set(titels: [String]) { // задаем пол
+    segmentControl.removeAllSegments()
+    titels.enumerated().forEach { (i, titel) in
+      segmentControl.insertSegment(withTitle: titel, at: i, animated: true)
+    }
+    segmentControl.selectedSegmentIndex = 0 // пол по умолчанию
+  }
   private func addTargets() {
     segmentControl.addTarget(self, action: #selector(segmentControlChangedIndex(sender:)), for: .valueChanged)
   }

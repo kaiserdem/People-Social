@@ -12,11 +12,17 @@ class TextFieldTableViewCell: UITableViewCell, NibLoadable {
 
   @IBOutlet weak var textField: UITextField!
   
+  // клоужер отдает действие что текст изменился, и передает текст
+  var textChanged: ItemClosure<String>?
+  
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-  
-    
+      addTargets()
+  }
+  private func addTargets() {
+    textField.addTarget(self, action: #selector(textFieldChanged(sender:)), for: .editingChanged)
+  }// вызываеться при изменении в поле
+  @objc private func textFieldChanged(sender: UITextField) {
+    textChanged?(sender.text ?? "")
+  }
 }

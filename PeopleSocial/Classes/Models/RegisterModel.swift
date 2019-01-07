@@ -8,18 +8,25 @@
 
 import UIKit
 
-class RegisterModel { // создаем модель
+class RegisterModel {  // создаем модель
   var photo: UIImage?
   var email: String?
   var password: String?
   var sex: Sex = .male // по дефолту
   var birthday: Date?
   
-  var isFiled: Bool { // все ли поля заполнены
+  var isFiled: Bool {  // все ли поля заполнены
     guard !(email ?? "").isEmpty, !(password ?? "").isEmpty, birthday != nil else {
-      return true
+      return false
     }
     return true
-
+  }
+  var dict: [String: Any]  { // словарь для обращения к базе данных
+    return [
+      "email": email ?? "",
+      "password" : password ?? "",
+      "sex": sex.rawValue,
+      "birthday": (birthday ?? Date()).timeIntervalSince1970
+    ]
   }
 }

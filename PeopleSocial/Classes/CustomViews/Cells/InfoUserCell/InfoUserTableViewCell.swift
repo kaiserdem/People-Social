@@ -10,23 +10,39 @@ import UIKit
 
 class InfoUserTableViewCell: UITableViewCell, StaticCellProtocol {
   
-  @IBOutlet weak var photoView: PhotoView!
-  @IBOutlet weak var backgroundFieldView: UIView!
+  @IBOutlet private weak var photoView: PhotoView!
+  @IBOutlet private weak var backgroundFieldView: UIView!
+  @IBOutlet private weak var emailTextField: UITextField!
+  @IBOutlet private weak var passwordTextField: UITextField!
   
-  var photoViewClicked: VoidClosure? {
+  static var heigth: CGFloat { // высота
+    return 100
+  }
+  
+  var photoViewClicked: VoidClosure? { // 
     didSet {
       photoView.clicked = photoViewClicked // по касанию задаетьяся картинка на фотовю
     }
   }
-  
-  static var heigth: CGFloat {
-    return 100
-  }
-  
+  // клоужер отдает действие что текст изменился, и передает текст
+  var emailTextChanged: ItemClosure<String>?
+  var passwordTextChanged: ItemClosure<String>?
+
   override func awakeFromNib() {
     super.awakeFromNib()
     
     Decoretor.decorator(cell: self)
+      addTargets()
+  }
+  private func addTargets() {
+    emailTextField.addTarget(self, action: #selector(emailTextFieldChanged(sender:)), for: .editingChanged)
+    passwordTextField.addTarget(self, action: #selector(passwordTextFieldChanged(sender:)), for: .editingChanged)
+  }                         // изменение в поле текст филд
+  @objc private func emailTextFieldChanged(sender: UITextField) {
+    emailTextChanged?(sender.text ?? "")
+  }
+  @objc private func passwordTextFieldChanged(sender: UITextField) {
+    passwordTextChanged?(sender.text ?? "")
   }
   
   func set(image: UIImage?) { // функция задает картинку
