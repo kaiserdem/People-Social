@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1498C2A80C1F2F4C55EA994E /* Pods_PeopleSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */; };
+		AD2F2F2421E52DD7003B4E85 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F2F2321E52DD7003B4E85 /* TextField.swift */; };
 		AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */; };
 		AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */; };
 		AD3370D521E24A8100EA3F96 /* SegmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3370D321E24A8100EA3F96 /* SegmentTableViewCell.xib */; };
@@ -63,6 +64,7 @@
 		769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.release.xcconfig"; sourceTree = "<group>"; };
 		8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2F2F2321E52DD7003B4E85 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeaderProtocol.swift; sourceTree = "<group>"; };
 		AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTableViewCell.swift; sourceTree = "<group>"; };
 		AD3370D321E24A8100EA3F96 /* SegmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentTableViewCell.xib; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 				769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD2F2F2221E52D66003B4E85 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				AD2F2F2321E52DD7003B4E85 /* TextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 		AD3370D121E249C100EA3F96 /* SegmentCell */ = {
@@ -234,14 +244,14 @@
 		ADF19D8821DE5209008B7455 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AD3370EB21E386B300EA3F96 /* HelpFiles */,
 				AD3370E821E37EC700EA3F96 /* Manager */,
 				ADF19D8D21DE525B008B7455 /* Models */,
 				ADF19D9021DE528A008B7455 /* Screens */,
-				ADF19D8A21DE5231008B7455 /* Protocols */,
 				ADF19D8C21DE524D008B7455 /* CustomViews */,
-				ADF19D8E21DE5268008B7455 /* Extentions */,
 				ADF19D8F21DE527B008B7455 /* Routers */,
+				AD3370EB21E386B300EA3F96 /* HelpFiles */,
+				ADF19D8E21DE5268008B7455 /* Extentions */,
+				ADF19D8A21DE5231008B7455 /* Protocols */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -281,6 +291,7 @@
 		ADF19D8C21DE524D008B7455 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				AD2F2F2221E52D66003B4E85 /* TextFields */,
 				AD4033AD21E226DB00107713 /* HeaderTitleView */,
 				ADF19D8B21DE5240008B7455 /* Cells */,
 				ADF19DA321DE6FD2008B7455 /* PhotoView */,
@@ -550,6 +561,7 @@
 				AD3370E521E2809200EA3F96 /* Sex.swift in Sources */,
 				ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */,
 				AD3370F521E518DA00EA3F96 /* AuthResult.swift in Sources */,
+				AD2F2F2421E52DD7003B4E85 /* TextField.swift in Sources */,
 				ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */,
 				AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */,
 				ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */,

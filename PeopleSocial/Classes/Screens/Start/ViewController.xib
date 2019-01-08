@@ -24,26 +24,21 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People Social" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88P-gn-RQW">
-                    <rect key="frame" x="12" y="298.5" width="351" height="70"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="70" id="ch3-XZ-huq"/>
-                    </constraints>
+                    <rect key="frame" x="81.5" y="311.5" width="212.5" height="44.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="37"/>
                     <color key="textColor" name="grayColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fie-qz-rmJ">
-                    <rect key="frame" x="12" y="555" width="351" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fie-qz-rmJ">
+                    <rect key="frame" x="12" y="555" width="351" height="42"/>
                     <color key="backgroundColor" name="grayColor"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                     <state key="normal" title="Register">
                         <color key="titleColor" name="blueColor"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3Y-ul-iOw">
-                    <rect key="frame" x="12" y="607" width="351" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3Y-ul-iOw">
+                    <rect key="frame" x="12" y="609" width="351" height="42"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                     <state key="normal" title="Enter">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,10 +47,14 @@
             </subviews>
             <color key="backgroundColor" name="blueColor"/>
             <constraints>
-                <constraint firstItem="88P-gn-RQW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Y3g-QD-sWD"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="88P-gn-RQW" secondAttribute="trailing" constant="12" id="a3X-fD-wXy"/>
-                <constraint firstItem="88P-gn-RQW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="c7e-3W-y35"/>
-                <constraint firstItem="88P-gn-RQW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sSI-15-rGI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fie-qz-rmJ" secondAttribute="trailing" constant="12" id="02q-5f-QHg"/>
+                <constraint firstItem="fie-qz-rmJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="F97-9h-UeW"/>
+                <constraint firstItem="88P-gn-RQW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pj9-e5-TSN"/>
+                <constraint firstItem="88P-gn-RQW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="b47-eQ-DJp"/>
+                <constraint firstItem="w3Y-ul-iOw" firstAttribute="top" secondItem="fie-qz-rmJ" secondAttribute="bottom" constant="12" id="e66-7R-3Nz"/>
+                <constraint firstItem="w3Y-ul-iOw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="irW-Z3-gDA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="w3Y-ul-iOw" secondAttribute="bottom" constant="16" id="jXd-K6-rM8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="w3Y-ul-iOw" secondAttribute="trailing" constant="12" id="uqk-Wk-imD"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="292" y="81"/>

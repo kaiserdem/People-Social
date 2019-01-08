@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseStorage
 import FirebaseAuth
 
-class AuthManager {
+class AuthManager {  // менеджер регистрации
   var currentUser: User? // текущий пользователь
   static let shared = AuthManager()
   private init() {}

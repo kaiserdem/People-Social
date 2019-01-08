@@ -13,7 +13,7 @@ extension UIViewController {
   func showAlert(with title: String, and massage: String) { // создаем алерт контроллер
     
     let alertController = UIAlertController(title: title, message: massage, preferredStyle: .alert)
-    let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
     alertController.addAction(okAction)
     
     present(alertController, animated: true, completion: nil)
