@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ARSLineProgress
 
 class RegisterViewController: UIViewController, NibLoadable {
 
@@ -67,8 +68,17 @@ class RegisterViewController: UIViewController, NibLoadable {
     navigationItem.rightBarButtonItem?.isEnabled = registerModel.isFiled
   }
   @objc private func rightBarButtonClicked(sender: UIBarButtonItem) { // кнопка готово
-    AuthManager.shared.register(with: registerModel) { // вызываем функцию регистрации
-    self.showAlert(with: "Ready", and: "Are you registered")
+    ARSLineProgress.show()  //
+    AuthManager.shared.register(with: registerModel) { result in // вызываем функцию регистрации
+      ARSLineProgress.hide()
+      
+      switch result {
+      case .success(_):
+        self.showAlert(with: "Ready", and: "Are you registered")
+      case .failure(let error):
+        self.showAlert(with: "Error", and: error.localizedDescription)
+
+      }
     }
   }
   private func configureDatePickerView() { // возраст,отображает пикер вю c
@@ -92,6 +102,10 @@ extension RegisterViewController:UINavigationControllerDelegate, UIImagePickerCo
     registerModel.photo = image
     updateDoneButtonStatus() // статус кнопки Done
     tableView.reloadData()   // обновляем таблицу
+    ARSLineProgress.show()   // показать прогресс 
+    StorageManager.shared.upload(photo: image, by: registerModel) {
+    ARSLineProgress.hide()   // скрыть прогресс
+    }
   }
 }
 extension RegisterViewController {

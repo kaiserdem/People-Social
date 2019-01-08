@@ -14,6 +14,7 @@ class RegisterModel {  // создаем модель
   var password: String?
   var sex: Sex = .male // по дефолту
   var birthday: Date?
+  var userId: String
   
   var isFiled: Bool {  // все ли поля заполнены
     guard !(email ?? "").isEmpty, !(password ?? "").isEmpty, birthday != nil else {
@@ -28,5 +29,9 @@ class RegisterModel {  // создаем модель
       "sex": sex.rawValue,
       "birthday": (birthday ?? Date()).timeIntervalSince1970
     ]
+  }
+  init() {
+    self.userId = UUID.init().uuidString
+
   }
 }
