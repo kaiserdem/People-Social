@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
     AuthManager.shared.singIn(with: email, and: password) { (result) in
       switch result {
       case .success:
-        self.showAlert(with: "Ready", and: "Are you registered")
+        self.showAlert(with: "Ready", and: "Are you entered")
       case .error(let error):
         self.showAlert(with: "Error", and: error)
       }

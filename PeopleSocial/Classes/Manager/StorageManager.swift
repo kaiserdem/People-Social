@@ -22,6 +22,7 @@ class StorageManager { // менеджер хранилища
     guard let data = photo.jpegData(compressionQuality: 0.5) else {
       return
     }
+    
     // создаем ветку avatars, по userId кладем фото
     sourceRef.child(Keys.avatars.rawValue).child(model.userId).putData(data, metadata: nil) { (metadata, error) in
       closure?()
