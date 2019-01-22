@@ -31,6 +31,12 @@ final class SecureStorageManager { // менеджер безопасного х
       completionHandler(CustomErrors.keychainError)
     }
   }
+  func eraseUserDataIfNedded() { // стереть данные пользователя из кичейн
+    guard isLoggedIn() else {
+      return
+    }
+    try? Locksmith.deleteDataForUserAccount(userAccount: myUserAccountIdentifier)
+  }
   // загрузить электронную почту и пароль
   func loadEmailAndPassword() -> (email: String?, password: String?) {
     let dictionary = Locksmith.loadDataForUserAccount(userAccount: myUserAccountIdentifier)
@@ -40,7 +46,7 @@ final class SecureStorageManager { // менеджер безопасного х
   }
   // Проверяем вошел ли пользователь, что б второй раз не вводить пароль
   func isLoggedIn() -> Bool {// залогинен
-    let credentials = loadEmailAndPassword()
+    let credentials = loadEmailAndPassword() // полномочия на загрузку данных
     return credentials.email != nil && credentials.password != nil
   }
 }

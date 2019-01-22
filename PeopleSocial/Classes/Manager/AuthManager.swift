@@ -17,6 +17,15 @@ class AuthManager: FirebaseManager {  // менеджер регистрации
   static let shared = AuthManager()
   private let auth = Auth.auth() // переменная авторизации
   
+  // войти в случае необходимости, опициональный блок комплетишион
+  func singInIfNeeded(completion: ItemClosure<FirebaseResult>? = nil) {
+    
+    let credentials = SecureStorageManager.shared.loadEmailAndPassword() // полномочия на загрузку
+    guard let email = credentials.email, let password = credentials.password else {
+      return
+    }
+    singIn(with: email, and: password, completion: completion ?? {_ in})
+  }
   // функция для авторизации
   func singIn(with email: String?, and password: String?, completion: @escaping ItemClosure<FirebaseResult>) {
     
@@ -63,24 +72,26 @@ class AuthManager: FirebaseManager {  // менеджер регистрации
       return
       }
       
-      guard let _ = result else {
+      guard let res = result else {
         completion(.failure(CustomErrors.unknownError))
         return
       }
+      self.currentUser = res.user
+      
       var dict = model.dict
       dict["id"] = id
-      self.usersRef.child(id).setValue(dict, withCompletionBlock: { (error, reference) in
-        self.addAvatarUrlIfNeded(for: model)
+      self.usersRef.child(res.user.uid).setValue(dict, withCompletionBlock: { (error, reference) in
+        self.addAvatarUrlIfNeded(for: model, user: res.user)
         completion(.success(()))
       })
     }
   }             // добавляем ссылку на фото в бд
-  func addAvatarUrlIfNeded(for model: RegisterModel) {
+  func addAvatarUrlIfNeded(for model: RegisterModel, user: User) {
     StorageManager.shared.loadAvatarUrl(for: model) { (url) in // загружаем url
       guard let url = url else { // проверяем на нил
         return
       }// нашли юзера по child, создаем новую ветку, записываем в базу
-      self.usersRef.child(model.userId).child("avatarUrl").setValue(url.absoluteString)
+      self.usersRef.child(user.uid).child("avatarUrl").setValue(url.absoluteString)
     }
   }
 }

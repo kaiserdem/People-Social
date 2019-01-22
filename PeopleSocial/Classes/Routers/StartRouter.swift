@@ -23,7 +23,7 @@ class StartRouter { // переносит по экратам
         source.navigationController?.pushViewController(vc, animated: true)
     }
   func routeAfterSuccess(from sourse: UIViewController) { // после авторазации
-    let vc = UINavigationController.init(rootViewController: CreatePostViewController())
+    let vc = Router.shared.startControllerAfterAuth
     sourse.present(vc, animated: true, completion: nil)
   }
 }

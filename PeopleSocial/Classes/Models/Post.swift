@@ -20,9 +20,16 @@ class Post: Codable {    // модель поста
   var type: Type
   var text: String?
   var imageData: Data?
+  var dateUnix: TimeInterval
   
-  init(text: String) {
+  init() {
     self.id = UUID().uuidString
+    self.dateUnix = Date().timeIntervalSinceNow
+    self.type = .text
+  }
+  
+  convenience init(text: String) {
+    self.init()
     self.type = .text
     self.text = text
   }

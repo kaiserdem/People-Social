@@ -9,18 +9,35 @@
 import UIKit
 
 class Router {
-    static let shared = Router()
-    
-    private init() {}
+  static let shared = Router()
   
-    func root( _ window: inout UIWindow?) {
-        let frame = UIScreen.main.bounds
-        window = UIWindow(frame: frame)
-        window?.makeKeyAndVisible()
-      
-      // если залогинен тогда CreatePostViewController, в пртивном случаем ViewController
-      let vc = SecureStorageManager.shared.isLoggedIn() ? CreatePostViewController() : ViewController()
-                                   // ставим навигейшен контроллре
-        window?.rootViewController = UINavigationController(rootViewController: vc)
-    }
+  private init() {}
+  
+  func root( _ window: inout UIWindow?) {
+    let frame = UIScreen.main.bounds
+    window = UIWindow(frame: frame)
+    window?.makeKeyAndVisible()
+    
+    // если залогинен тогда CreatePostViewController, в противном случаем ViewController
+    let vc = SecureStorageManager.shared.isLoggedIn() ? startControllerAfterAuth : ViewController()
+    // ставим навигейшен контроллре
+    window?.rootViewController = UINavigationController(rootViewController: vc)
+  }
+  // переменная указывает какой контроллер загружать
+  var startControllerAfterAuth: UIViewController {
+    
+    let createPostVC = CreatePostViewController()
+    let createPostNC = UINavigationController(rootViewController: createPostVC)
+    let createPostTabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 0) // елемент бара
+    createPostNC.tabBarItem = createPostTabBarItem // елемент соответствует контроллеру
+    
+    let feedVC = FeedViewController()
+    let feedNC = UINavigationController(rootViewController: feedVC)
+    let feedTabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+    feedNC.tabBarItem = feedTabBarItem
+    
+    let tabBarVC = UITabBarController()
+    tabBarVC.setViewControllers([feedNC, createPostNC], animated: true)
+    return tabBarVC
+  }
 }
