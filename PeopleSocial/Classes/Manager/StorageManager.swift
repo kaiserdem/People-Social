@@ -15,14 +15,13 @@ class StorageManager { // менеджер хранилища
   
   // указывает на первоначальную ветку в базе данных
   private let sourceRef = Storage.storage().reference()
-  
+
   // принимает фото, возвращает по айди клоужер(опционально)
   func  upload(photo: UIImage,by model:RegisterModel, closure: VoidClosure? = nil) {
     //  переобразоваваем тип фото UIImage в тип дата
     guard let data = photo.jpegData(compressionQuality: 0.5) else {
       return
     }
-    
     // создаем ветку avatars, по userId кладем фото
     sourceRef.child(Keys.avatars.rawValue).child(model.userId).putData(data, metadata: nil) { (metadata, error) in
       closure?()

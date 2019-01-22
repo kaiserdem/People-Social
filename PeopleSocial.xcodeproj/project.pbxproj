@@ -12,6 +12,10 @@
 		AD2B1AB221F4B39800DE6246 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */; };
 		AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */; };
 		AD2B1AB721F4BDF100DE6246 /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AB621F4BDF100DE6246 /* UserHeaderView.swift */; };
+		AD2B1AB921F4FCFC00DE6246 /* BiometricAuthManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AB821F4FCFC00DE6246 /* BiometricAuthManager .swift */; };
+		AD2B1ABB21F502D000DE6246 /* SecureStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1ABA21F502D000DE6246 /* SecureStorageManager.swift */; };
+		AD2B1ABF21F6024700DE6246 /* Custom Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */; };
+		AD2B1AC121F61D8700DE6246 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AC021F61D8700DE6246 /* LoginViewController.xib */; };
 		AD2F2F2421E52DD7003B4E85 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F2F2321E52DD7003B4E85 /* TextField.swift */; };
 		AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */; };
 		AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */; };
@@ -25,7 +29,6 @@
 		AD3370E721E286CC00EA3F96 /* Extention+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370E621E286CC00EA3F96 /* Extention+UIViewController.swift */; };
 		AD3370EA21E37EE300EA3F96 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370E921E37EE300EA3F96 /* AuthManager.swift */; };
 		AD3370ED21E3873400EA3F96 /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370EC21E3873400EA3F96 /* Utilites.swift */; };
-		AD3370EF21E4C42100EA3F96 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370EE21E4C42100EA3F96 /* CustomError.swift */; };
 		AD3370F121E4C4C100EA3F96 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F021E4C4C100EA3F96 /* Validator.swift */; };
 		AD3370F321E4C80100EA3F96 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F221E4C80100EA3F96 /* StorageManager.swift */; };
 		AD3370F521E518DA00EA3F96 /* AuthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F421E518DA00EA3F96 /* AuthResult.swift */; };
@@ -43,7 +46,6 @@
 		ADF19D9C21DE6BC9008B7455 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D9A21DE6BC9008B7455 /* RegisterViewController.swift */; };
 		ADF19D9D21DE6BC9008B7455 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D9B21DE6BC9008B7455 /* RegisterViewController.xib */; };
 		ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D9F21DE6BE9008B7455 /* LoginViewController.swift */; };
-		ADF19DA221DE6BE9008B7455 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF19DA021DE6BE9008B7455 /* LoginViewController.xib */; };
 		ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DA421DE7009008B7455 /* PhotoView.swift */; };
 		ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DA621DE703E008B7455 /* Extention+View.swift */; };
 		ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DA821DE71EF008B7455 /* HeigtContainable.swift */; };
@@ -72,6 +74,10 @@
 		AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
 		AD2B1AB621F4BDF100DE6246 /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
+		AD2B1AB821F4FCFC00DE6246 /* BiometricAuthManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BiometricAuthManager .swift"; sourceTree = "<group>"; };
+		AD2B1ABA21F502D000DE6246 /* SecureStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorageManager.swift; sourceTree = "<group>"; };
+		AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Errors.swift"; sourceTree = "<group>"; };
+		AD2B1AC021F61D8700DE6246 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AD2F2F2321E52DD7003B4E85 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeaderProtocol.swift; sourceTree = "<group>"; };
 		AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTableViewCell.swift; sourceTree = "<group>"; };
@@ -85,7 +91,6 @@
 		AD3370E621E286CC00EA3F96 /* Extention+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIViewController.swift"; sourceTree = "<group>"; };
 		AD3370E921E37EE300EA3F96 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		AD3370EC21E3873400EA3F96 /* Utilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
-		AD3370EE21E4C42100EA3F96 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		AD3370F021E4C4C100EA3F96 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		AD3370F221E4C80100EA3F96 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		AD3370F421E518DA00EA3F96 /* AuthResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResult.swift; sourceTree = "<group>"; };
@@ -107,7 +112,6 @@
 		ADF19D9A21DE6BC9008B7455 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ADF19D9B21DE6BC9008B7455 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		ADF19D9F21DE6BE9008B7455 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		ADF19DA021DE6BE9008B7455 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		ADF19DA421DE7009008B7455 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		ADF19DA621DE703E008B7455 /* Extention+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+View.swift"; sourceTree = "<group>"; };
 		ADF19DA821DE71EF008B7455 /* HeigtContainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeigtContainable.swift; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 			children = (
 				AD3370E921E37EE300EA3F96 /* AuthManager.swift */,
 				AD3370F221E4C80100EA3F96 /* StorageManager.swift */,
+				AD2B1AB821F4FCFC00DE6246 /* BiometricAuthManager .swift */,
+				AD2B1ABA21F502D000DE6246 /* SecureStorageManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -294,7 +300,6 @@
 		ADF19D8A21DE5231008B7455 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				AD3370EE21E4C42100EA3F96 /* CustomError.swift */,
 				ADF19DA821DE71EF008B7455 /* HeigtContainable.swift */,
 				ADF19DAA21DE7388008B7455 /* NibLoadable.swift */,
 				ADF19DAC21DE75BA008B7455 /* Typealias.swift */,
@@ -332,6 +337,7 @@
 				AD3370E221E2803000EA3F96 /* RegisterModel.swift */,
 				AD3370E421E2809200EA3F96 /* Sex.swift */,
 				AD3370F421E518DA00EA3F96 /* AuthResult.swift */,
+				AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -388,7 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				ADF19D9F21DE6BE9008B7455 /* LoginViewController.swift */,
-				ADF19DA021DE6BE9008B7455 /* LoginViewController.xib */,
+				AD2B1AC021F61D8700DE6246 /* LoginViewController.xib */,
 			);
 			path = LoginVC;
 			sourceTree = "<group>";
@@ -507,10 +513,10 @@
 				AD3370DF21E2651D00EA3F96 /* TextFieldTableViewCell.xib in Resources */,
 				AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */,
 				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
-				ADF19DA221DE6BE9008B7455 /* LoginViewController.xib in Resources */,
 				AD3370D521E24A8100EA3F96 /* SegmentTableViewCell.xib in Resources */,
 				AD3370DA21E2594B00EA3F96 /* TextTableViewCell.xib in Resources */,
 				ADF19D5B21DE4ED8008B7455 /* GoogleService-Info.plist in Resources */,
+				AD2B1AC121F61D8700DE6246 /* LoginViewController.xib in Resources */,
 				ADF19D9321DE535E008B7455 /* ViewController.xib in Resources */,
 				AD2B1AB221F4B39800DE6246 /* FeedViewController.xib in Resources */,
 				ADF19D4221DE4E87008B7455 /* Assets.xcassets in Resources */,
@@ -600,6 +606,7 @@
 				ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */,
 				ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */,
 				ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */,
+				AD2B1ABB21F502D000DE6246 /* SecureStorageManager.swift in Sources */,
 				ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */,
 				AD3370E721E286CC00EA3F96 /* Extention+UIViewController.swift in Sources */,
 				AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */,
@@ -609,9 +616,10 @@
 				AD3370ED21E3873400EA3F96 /* Utilites.swift in Sources */,
 				AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */,
 				AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */,
-				AD3370EF21E4C42100EA3F96 /* CustomError.swift in Sources */,
+				AD2B1ABF21F6024700DE6246 /* Custom Errors.swift in Sources */,
 				AD3370E321E2803000EA3F96 /* RegisterModel.swift in Sources */,
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,
+				AD2B1AB921F4FCFC00DE6246 /* BiometricAuthManager .swift in Sources */,
 				AD3370DE21E2651D00EA3F96 /* TextFieldTableViewCell.swift in Sources */,
 				AD3370EA21E37EE300EA3F96 /* AuthManager.swift in Sources */,
 				AD3370F121E4C4C100EA3F96 /* Validator.swift in Sources */,

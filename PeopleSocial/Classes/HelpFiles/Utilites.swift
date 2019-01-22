@@ -22,3 +22,9 @@ func ID() -> String { // задаем айдти пользователя
   }
   return result
 }
+
+public func onMain(block: @escaping () -> Void) { // на главном потоке выполняеться блок
+  DispatchQueue.main.async {
+    block()
+  }
+}

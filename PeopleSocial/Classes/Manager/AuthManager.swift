@@ -26,7 +26,13 @@ class AuthManager {  // менеджер регистрации
   private let auth = Auth.auth() // переменная авторизации
   
   // функция для авторизации
-  func singIn(with email: String, and password: String, completion: @escaping ItemClosure<AuthResult>) {
+  func singIn(with email: String?, and password: String?, completion: @escaping ItemClosure<AuthResult>) {
+    
+    guard let email = email, let password = password else { // проверка, вернуть если не существует
+      completion(AuthResult.error("Something wrong with email or password. Please try again"))
+      return
+    }
+  
     auth.signIn(withEmail: email, password: password) { (result, error) in
       if let error = error {
         completion(AuthResult.error(error.localizedDescription))// не удалось
@@ -46,11 +52,11 @@ class AuthManager {  // менеджер регистрации
   func register(with model: RegisterModel, completion: @escaping ResultHandler<Void>) {
     // создаем модель нового пользователя ветки пользователя
     guard model.isFiled else {
-      completion(.failure(CustomErrors.unknowError))
+      completion(.failure(CustomErrors.unknownError))
       return
     }
     guard let email = model.email, let password = model.password else {
-      completion(.failure(CustomErrors.unknowError))
+      completion(.failure(CustomErrors.unknownError))
       return
     }
     guard Validators.isSimlpeEmail(email) else {
@@ -62,16 +68,19 @@ class AuthManager {  // менеджер регистрации
     auth.createUser(withEmail: email, password: password) { result, error in
       if let error = error {
         completion(.failure(error))
-      } else if let _ = result {
-        var dict = model.dict
-        dict["id"] = id
-        self.usersRef.child(id).setValue(dict, withCompletionBlock: { (error, reference) in
-        self.addAvatarUrlIfNeded(for: model) // загрузка фото
-        completion(.success(()))
-        })
-      } else {
-        completion(.failure(CustomErrors.unknowError))
+      return
       }
+      
+      guard let _ = result else {
+        completion(.failure(CustomErrors.unknownError))
+        return
+      }
+      var dict = model.dict
+      dict["id"] = id
+      self.usersRef.child(id).setValue(dict, withCompletionBlock: { (error, reference) in
+        self.addAvatarUrlIfNeded(for: model)
+        completion(.success(()))
+      })
     }
   }             // добавляем ссылку на фото в бд
   func addAvatarUrlIfNeded(for model: RegisterModel) {
