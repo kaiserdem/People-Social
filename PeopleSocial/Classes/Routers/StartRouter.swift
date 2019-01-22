@@ -22,5 +22,8 @@ class StartRouter { // переносит по экратам
         let vc = LoginViewController()
         source.navigationController?.pushViewController(vc, animated: true)
     }
-  
+  func routeAfterSuccess(from sourse: UIViewController) { // после авторазации
+    let vc = UINavigationController.init(rootViewController: CreatePostViewController())
+    sourse.present(vc, animated: true, completion: nil)
+  }
 }

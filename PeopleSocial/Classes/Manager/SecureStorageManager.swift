@@ -31,11 +31,17 @@ final class SecureStorageManager { // менеджер безопасного х
       completionHandler(CustomErrors.keychainError)
     }
   }
+  // загрузить электронную почту и пароль
   func loadEmailAndPassword() -> (email: String?, password: String?) {
     let dictionary = Locksmith.loadDataForUserAccount(userAccount: myUserAccountIdentifier)
     let email = dictionary?[Keys.email.rawValue] as? String ?? nil
     let password = dictionary?[Keys.password.rawValue] as? String ?? nil
     return (email: email, password: password)
+  }
+  // Проверяем вошел ли пользователь, что б второй раз не вводить пароль
+  func isLoggedIn() -> Bool {// залогинен
+    let credentials = loadEmailAndPassword()
+    return credentials.email != nil && credentials.password != nil
   }
 }
 private extension SecureStorageManager {

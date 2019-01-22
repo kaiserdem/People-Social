@@ -9,18 +9,18 @@
 import UIKit
 
 class Router {
-    
     static let shared = Router()
     
     private init() {}
-    
-    private let rootViewController: UIViewController = ViewController()
-    
+  
     func root( _ window: inout UIWindow?) {
         let frame = UIScreen.main.bounds
         window = UIWindow(frame: frame)
         window?.makeKeyAndVisible()
+      
+      // если залогинен тогда CreatePostViewController, в пртивном случаем ViewController
+      let vc = SecureStorageManager.shared.isLoggedIn() ? CreatePostViewController() : ViewController()
                                    // ставим навигейшен контроллре
-        window?.rootViewController = UINavigationController(rootViewController: rootViewController)
+        window?.rootViewController = UINavigationController(rootViewController: vc)
     }
 }

@@ -11,40 +11,32 @@ import FirebaseDatabase
 import FirebaseStorage
 import FirebaseAuth
 
-class AuthManager {  // менеджер регистрации
+class AuthManager: FirebaseManager {  // менеджер регистрации
+  
   var currentUser: User? // текущий пользователь
   static let shared = AuthManager()
-  private init() {}
-  
-  // указывает на первоначальную ветку в базе данных
-  private var sourceRef: DatabaseReference {
-    return Database.database().reference()
-  }
-  private var usersRef: DatabaseReference {
-    return sourceRef.child("users")
-  }
   private let auth = Auth.auth() // переменная авторизации
   
   // функция для авторизации
-  func singIn(with email: String?, and password: String?, completion: @escaping ItemClosure<AuthResult>) {
+  func singIn(with email: String?, and password: String?, completion: @escaping ItemClosure<FirebaseResult>) {
     
     guard let email = email, let password = password else { // проверка, вернуть если не существует
-      completion(AuthResult.error("Something wrong with email or password. Please try again"))
+      completion(FirebaseResult.error("Something wrong with email or password. Please try again"))
       return
     }
   
     auth.signIn(withEmail: email, password: password) { (result, error) in
       if let error = error {
-        completion(AuthResult.error(error.localizedDescription))// не удалось
+        completion(FirebaseResult.error(error.localizedDescription))// не удалось
         return
       }
       guard let user = result?.user else {
-        completion(AuthResult.error("User not exist")) // не существует
+        completion(FirebaseResult.error("User not exist")) // не существует
 
         return
       }
       self.currentUser = user
-      completion(AuthResult.success) // успешно
+      completion(FirebaseResult.success) // успешно
     }
   }
   

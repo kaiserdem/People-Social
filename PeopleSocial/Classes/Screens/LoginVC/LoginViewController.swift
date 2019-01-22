@@ -19,7 +19,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
       title = "Enter"
       addRightButton()
-      
       addTargets()
       Decorator.decorate(self)
   }
@@ -31,10 +30,10 @@ class LoginViewController: UIViewController {
     let email = emailTextField.text ?? "" // есть ли текст
     let password = passwordTextField.text ?? ""
     
-    guard !email.isEmpty && !password.isEmpty else {
+    guard !email.isEmpty && !password.isEmpty else { // если пустые
       showAlert(with: "Error", and: "Fill in the fields")
       return
-    }
+    }// в противном случае, если все хорошо
     self.performLogin(email: email, password: password)
   }
   
@@ -69,11 +68,11 @@ private extension LoginViewController {
     authButton.addTarget(self, action: #selector(authButtonClicked), for: .touchUpInside)
   }
   
-  func performLogin(email: String?, password: String?) {
+  func performLogin(email: String?, password: String?) { // выполнить вход
     AuthManager.shared.singIn(with: email, and: password) { (result) in
       switch result {
       case .success:
-        self.showAlert(with: "Successfully", and: "You are logged in")
+         StartRouter.shared.routeAfterSuccess(from: self)
       case .error(let error):
         self.showAlert(with: "Error", and: error)
       }

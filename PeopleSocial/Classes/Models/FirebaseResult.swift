@@ -1,5 +1,5 @@
 //
-//  AuthResult.swift
+//  FirebaseResult.swift
 //  PeopleSocial
 //
 //  Created by Kaiserdem on 08.01.2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AuthResult { //  результат регистрации
+enum FirebaseResult { //  результат регистрации
   case success    // успешно
   case error(String)
 }

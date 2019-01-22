@@ -16,6 +16,12 @@
 		AD2B1ABB21F502D000DE6246 /* SecureStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1ABA21F502D000DE6246 /* SecureStorageManager.swift */; };
 		AD2B1ABF21F6024700DE6246 /* Custom Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */; };
 		AD2B1AC121F61D8700DE6246 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AC021F61D8700DE6246 /* LoginViewController.xib */; };
+		AD2B1AC521F7325D00DE6246 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AC321F7325D00DE6246 /* CreatePostViewController.swift */; };
+		AD2B1AC621F7325D00DE6246 /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AC421F7325D00DE6246 /* CreatePostViewController.xib */; };
+		AD2B1AC821F737F900DE6246 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AC721F737F900DE6246 /* PostManager.swift */; };
+		AD2B1ACA21F73AEE00DE6246 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AC921F73AEE00DE6246 /* FirebaseManager.swift */; };
+		AD2B1ACC21F742DA00DE6246 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1ACB21F742DA00DE6246 /* Post.swift */; };
+		AD2B1ACE21F7468F00DE6246 /* Extention+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1ACD21F7468F00DE6246 /* Extention+Encodable.swift */; };
 		AD2F2F2421E52DD7003B4E85 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F2F2321E52DD7003B4E85 /* TextField.swift */; };
 		AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */; };
 		AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */; };
@@ -31,7 +37,7 @@
 		AD3370ED21E3873400EA3F96 /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370EC21E3873400EA3F96 /* Utilites.swift */; };
 		AD3370F121E4C4C100EA3F96 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F021E4C4C100EA3F96 /* Validator.swift */; };
 		AD3370F321E4C80100EA3F96 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F221E4C80100EA3F96 /* StorageManager.swift */; };
-		AD3370F521E518DA00EA3F96 /* AuthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F421E518DA00EA3F96 /* AuthResult.swift */; };
+		AD3370F521E518DA00EA3F96 /* FirebaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */; };
 		AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4033AE21E226E700107713 /* HeaderTitleView.swift */; };
 		AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4033B221E228BE00107713 /* HeaderTitleView.xib */; };
 		ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */; };
@@ -78,6 +84,12 @@
 		AD2B1ABA21F502D000DE6246 /* SecureStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorageManager.swift; sourceTree = "<group>"; };
 		AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Errors.swift"; sourceTree = "<group>"; };
 		AD2B1AC021F61D8700DE6246 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AD2B1AC321F7325D00DE6246 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		AD2B1AC421F7325D00DE6246 /* CreatePostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePostViewController.xib; sourceTree = "<group>"; };
+		AD2B1AC721F737F900DE6246 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
+		AD2B1AC921F73AEE00DE6246 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		AD2B1ACB21F742DA00DE6246 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AD2B1ACD21F7468F00DE6246 /* Extention+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+Encodable.swift"; sourceTree = "<group>"; };
 		AD2F2F2321E52DD7003B4E85 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeaderProtocol.swift; sourceTree = "<group>"; };
 		AD3370D221E24A8100EA3F96 /* SegmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTableViewCell.swift; sourceTree = "<group>"; };
@@ -93,7 +105,7 @@
 		AD3370EC21E3873400EA3F96 /* Utilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
 		AD3370F021E4C4C100EA3F96 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		AD3370F221E4C80100EA3F96 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		AD3370F421E518DA00EA3F96 /* AuthResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResult.swift; sourceTree = "<group>"; };
+		AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseResult.swift; sourceTree = "<group>"; };
 		AD4033AE21E226E700107713 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
 		AD4033B221E228BE00107713 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
 		ADF19D3721DE4E85008B7455 /* PeopleSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +180,15 @@
 			path = UserHeader;
 			sourceTree = "<group>";
 		};
+		AD2B1AC221F731C100DE6246 /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B1AC321F7325D00DE6246 /* CreatePostViewController.swift */,
+				AD2B1AC421F7325D00DE6246 /* CreatePostViewController.xib */,
+			);
+			path = CreatePost;
+			sourceTree = "<group>";
+		};
 		AD2F2F2221E52D66003B4E85 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +231,8 @@
 				AD3370F221E4C80100EA3F96 /* StorageManager.swift */,
 				AD2B1AB821F4FCFC00DE6246 /* BiometricAuthManager .swift */,
 				AD2B1ABA21F502D000DE6246 /* SecureStorageManager.swift */,
+				AD2B1AC721F737F900DE6246 /* PostManager.swift */,
+				AD2B1AC921F73AEE00DE6246 /* FirebaseManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -336,8 +359,9 @@
 			children = (
 				AD3370E221E2803000EA3F96 /* RegisterModel.swift */,
 				AD3370E421E2809200EA3F96 /* Sex.swift */,
-				AD3370F421E518DA00EA3F96 /* AuthResult.swift */,
+				AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */,
 				AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */,
+				AD2B1ACB21F742DA00DE6246 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,6 +372,7 @@
 				ADF19DA621DE703E008B7455 /* Extention+View.swift */,
 				ADF19DAE21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift */,
 				AD3370E621E286CC00EA3F96 /* Extention+UIViewController.swift */,
+				AD2B1ACD21F7468F00DE6246 /* Extention+Encodable.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -364,6 +389,7 @@
 		ADF19D9021DE528A008B7455 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				AD2B1AC221F731C100DE6246 /* CreatePost */,
 				AD2B1AAE21F4B31300DE6246 /* Feed */,
 				ADF19D9E21DE6BCF008B7455 /* LoginVC */,
 				ADF19D9921DE6B94008B7455 /* RegisterVC */,
@@ -513,6 +539,7 @@
 				AD3370DF21E2651D00EA3F96 /* TextFieldTableViewCell.xib in Resources */,
 				AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */,
 				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
+				AD2B1AC621F7325D00DE6246 /* CreatePostViewController.xib in Resources */,
 				AD3370D521E24A8100EA3F96 /* SegmentTableViewCell.xib in Resources */,
 				AD3370DA21E2594B00EA3F96 /* TextTableViewCell.xib in Resources */,
 				ADF19D5B21DE4ED8008B7455 /* GoogleService-Info.plist in Resources */,
@@ -595,17 +622,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3370E521E2809200EA3F96 /* Sex.swift in Sources */,
+				AD2B1AC821F737F900DE6246 /* PostManager.swift in Sources */,
+				AD2B1ACA21F73AEE00DE6246 /* FirebaseManager.swift in Sources */,
 				ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */,
-				AD3370F521E518DA00EA3F96 /* AuthResult.swift in Sources */,
+				AD2B1ACE21F7468F00DE6246 /* Extention+Encodable.swift in Sources */,
+				AD3370F521E518DA00EA3F96 /* FirebaseResult.swift in Sources */,
 				AD2F2F2421E52DD7003B4E85 /* TextField.swift in Sources */,
 				AD2B1AB721F4BDF100DE6246 /* UserHeaderView.swift in Sources */,
 				ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */,
 				AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */,
+				AD2B1AC521F7325D00DE6246 /* CreatePostViewController.swift in Sources */,
 				ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */,
 				ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */,
 				ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */,
 				ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */,
 				ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */,
+				AD2B1ACC21F742DA00DE6246 /* Post.swift in Sources */,
 				AD2B1ABB21F502D000DE6246 /* SecureStorageManager.swift in Sources */,
 				ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */,
 				AD3370E721E286CC00EA3F96 /* Extention+UIViewController.swift in Sources */,

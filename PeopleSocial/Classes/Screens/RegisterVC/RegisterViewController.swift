@@ -74,7 +74,12 @@ class RegisterViewController: UIViewController, NibLoadable {
       
       switch result {
       case .success(_):
-        self.showAlert(with: "Ready", and: "Are you registered")
+        StartRouter.shared.routeAfterSuccess(from: self)
+        SecureStorageManager.shared.save(email: self.registerModel.email, password: self.registerModel.password, completionHandler: { (error) in
+          if let error = error {
+            print(String(describing: error.errorDescription))
+          }
+        })
       case .failure(let error):
         self.showAlert(with: "Error", and: error.localizedDescription)
 
