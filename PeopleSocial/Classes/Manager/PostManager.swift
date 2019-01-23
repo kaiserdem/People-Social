@@ -43,19 +43,21 @@ final class PostManager: FirebaseManager {
       var result: [Post] = [] // пустой масив постов
       
        // кладем занчение из снепшот в масив
-      guard let value = snapshot.value as? [[AnyHashable: Any]] else {
+      guard let value = snapshot.value as? [String: [AnyHashable: Any]] else {
         completion(.error("Post not exist"))
         return
       }
-      for element in value {
+      let allKeys = value.keys
+      allKeys.forEach({ (key) in
+        
         // получили доступ к масиву постов в виде дикширани AnyHashable
-        if let postsDictionaryArray = (element[Keys.posts] as? [[AnyHashable: Any]]) {
+        if let element =  value[key], let postsDictionaryArray = (element[Keys.posts.rawValue] as? [String: [AnyHashable: Any]]) {
           // создаем масив постов
-          let posts = postsDictionaryArray.compactMap { try? Post.init(from: $0) }
+          let posts = postsDictionaryArray.compactMap { try? Post.init(from: $0.value) }
           // сложили два масива
           result.append(contentsOf: posts) //сложили два масива
         }
-      }
+      })
       completion(.success(result)) // когад прошли циклом  возвращаем масив
     }
   }
