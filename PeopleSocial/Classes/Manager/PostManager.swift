@@ -11,33 +11,32 @@ import Firebase
 
 final class PostManager: FirebaseManager {
   
-  enum Result {
-    case success([Post]) // масив постов
-    case error(String)
-  }
-  
   private override init() {}
   
   static let shared = PostManager()
-       // функция создания поста
-  func createPost(from user: User, with text: String, completion: @escaping ItemClosure<FirebaseResult>) {
-    let postID = UUID().uuidString // генерируем айди
-    let post = Post(text: text) // создаем сам пост
+       // функция создания поста c  изображением
+  func createPost(from user: User, with text: String? = nil, image: UIImage? = nil,  completion: @escaping ItemClosure<CreatedPostResult>) {
+    if let text = text, text.isEmpty, image == nil {
+      completion(.error("Can't create empty post"))
+      return
+    }
+    let post = Post(text: text, imageData: image?.jpegData(compressionQuality: 0.5))
+    
     guard let dictionaty = post.dictionary  else { // пост помещаем в dictionaty
       completion(.error("Post model not dictionaty")) // если не получилось
       return
     }
     // обращаеимся к юзеру по айди, создаем папаку, задаем значения
-    usersRef.child(user.uid).child(Keys.posts.rawValue).child(postID).setValue(dictionaty) { (error, reference) in
+    usersRef.child(user.uid).child(Keys.posts.rawValue).child(post.id).setValue(dictionaty) { (error, reference) in
       if let error = error?.localizedDescription {
         completion(.error(error))
         return
       }
-      completion(.success) // если все получилось
+      completion(.success(post))// если все получилось
     }
   }
   // функция загружает все посты
-  func loadingAllPosts(completion: @escaping ItemClosure<Result>) {
+  func loadingAllPosts(completion: @escaping ItemClosure<LoadedPostsResult>) {
     // наблюдатель за значением
     usersRef.observe(.value) { (snapshot) in
       var result: [Post] = [] // пустой масив постов
@@ -63,7 +62,18 @@ final class PostManager: FirebaseManager {
   }
 }
 extension PostManager {
+  
   fileprivate enum Keys: String {
     case posts
+  }
+  
+  enum LoadedPostsResult { //результат загрузки поста
+    case success([Post])
+    case error(String)
+  }
+  
+  enum CreatedPostResult { // результат созадния поста
+    case success(Post)
+    case error(String)
   }
 }

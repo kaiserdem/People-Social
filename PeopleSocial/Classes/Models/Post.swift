@@ -33,4 +33,23 @@ class Post: Codable {    // модель поста
     self.type = .text
     self.text = text
   }
+  convenience init(imageData: Data) {
+    self.init()
+    self.type = .image
+    self.imageData = imageData
+  }
+  convenience init(text: String?, imageData: Data?) {
+    if let text = text, let imageData = imageData {
+      self.init()
+      self.text = text
+      self.imageData = imageData
+      self.type = .textAndImage
+    } else if let text = text {
+      self.init(text: text)
+    }else if let imageData = imageData {
+      self.init(imageData: imageData)
+    } else {
+      self.init()
+    }
+  }
 }

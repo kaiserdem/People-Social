@@ -10,7 +10,7 @@ import UIKit
 
 class FeedViewController: UIViewController {
   
-  @IBOutlet  weak var tableView: UITableView!
+  @IBOutlet private weak var tableView: UITableView!
   
   private var posts: [Post] = [] {
     didSet {
@@ -45,14 +45,14 @@ extension FeedViewController: UITableViewDelegate { // высота строки
     return UITableView.automaticDimension
   }                       // расчитать высоту для строки
   func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 44
+    return 346 // первое
   }
 }
 extension FeedViewController: UITableViewDataSource {
-                                       // настройка ячейки
+  // настройка ячейки
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.name, for: indexPath) as! PostTableViewCell
-    cell.textView.text = posts[indexPath.row].text
+    cell.sutup(with: posts[indexPath.row]) // второе
     return cell
   }                               // колич рядов в секции
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
