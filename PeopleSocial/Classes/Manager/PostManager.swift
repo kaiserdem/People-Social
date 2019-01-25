@@ -14,6 +14,15 @@ final class PostManager: FirebaseManager {
   private override init() {}
   
   static let shared = PostManager()
+  
+  // создать пост из модели
+  func createPost(from user: User, with model: CreatePostModel,  completion: @escaping ItemClosure<CreatedPostResult>) {
+    guard model.isField else { // если не пустое
+      completion(.error("Can't create empty post"))
+      return
+    }
+    createPost(from: user, with: model.text, image: model.image, completion: completion)
+  }
        // функция создания поста c  изображением
   func createPost(from user: User, with text: String? = nil, image: UIImage? = nil,  completion: @escaping ItemClosure<CreatedPostResult>) {
     if let text = text, text.isEmpty, image == nil {
@@ -56,6 +65,9 @@ final class PostManager: FirebaseManager {
           // сложили два масива
           result.append(contentsOf: posts) //сложили два масива
         }
+      })
+      result.sort(by: { (post1, post2) -> Bool in // сортируем результат
+        return post1.dateUnix < post2.dateUnix // дата первого поста меньше даты творого
       })
       completion(.success(result)) // когад прошли циклом  возвращаем масив
     }

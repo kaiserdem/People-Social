@@ -9,26 +9,42 @@
 import UIKit
 
 class CreatePostViewController: UIViewController {
-
+  
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var doneButton: UIButton!
   @IBOutlet weak var postImageView: UIImageView!
   @IBOutlet weak var crossImageView: UIImageView!
-
   
-  private var tapToAddPostImage = #imageLiteral(resourceName: "tap_button")
+    private let model = CreatePostModel()
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    Decorator.decorate(vc: self)
+    textView.delegate = self
+    addTargets()
+    addGestures()
+    clear()
+  }
+}
+extension CreatePostViewController: UITextViewDelegate{
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-      Decorator.decorate(vc: self)
-      addTargets()
-      addGestures()
-      updatePostImageView(image: tapToAddPostImage)
-    }
+  func textViewDidChange(_ textView: UITextView) { // текст был изменен
+    let text = textView.text
+    model.set(text: text)
+  }
 }
 private extension CreatePostViewController {
   
+// настраивает UI данные внутри модели
+  private func set(image: UIImage?) {
+    updatePostImageView(image: image)
+    model.set(image: image)
+  }
+  private func clear() { // очистить окно после полтверждения
+    set(image: nil)
+    textView.text = nil // убрать текст
+    textView.resignFirstResponder() // закрыть текст фю
+  }
   func addTargets() { // кнопка добавить пост
     doneButton.addTarget(self, action: #selector(doneButtonClicked), for: .touchUpInside)
   }
@@ -48,7 +64,7 @@ private extension CreatePostViewController {
   }
   
   @objc func crosstImageClicked() {
-    updatePostImageView(image: tapToAddPostImage)
+    updatePostImageView(image: nil)
   }
   
   @objc func doneButtonClicked() {
@@ -56,20 +72,24 @@ private extension CreatePostViewController {
       showAlert(with: "Error", and: "User not logged in") // если нет
       return
     }
-    _ = postImageView.image != #imageLiteral(resourceName: "tap_button.png") ? postImageView.image : nil
-    
-      PostManager.shared.createPost(from: user, with: textView.text, completion: { (result) in
-        switch result {
-        case .error(let textError):
-          self.showAlert(with: "Error", and: textError)
-        case .success:
-          self.showAlert(with: "Success", and: "Post has been created")
-        }
-    })
+    PostManager.shared.createPost(from: user, with: model) { (result) in
+      switch result {
+      case .error(let textError):
+        self.showAlert(with: "Error", and: textError)
+      case .success:
+        self.clear() // стереть
+        self.showAlert(with: "Success", and: "Post has been created")
+      }
+    }
   }
-  func updatePostImageView(image: UIImage) {
+  func updatePostImageView(image: UIImage?) { // звгрузить картинку из поста
+    guard let image = image else {  // загрузка удалась
+      postImageView.image = #imageLiteral(resourceName: "tap_button.png") //
+      crossImageView.isHidden = true
+      return
+    }
+    crossImageView.isHidden = false
     postImageView.image = image
-    crossImageView.isHidden = image == tapToAddPostImage
   }
 }
 private extension CreatePostViewController {
@@ -86,9 +106,9 @@ extension CreatePostViewController: UINavigationControllerDelegate, UIImagePicke
     picker.dismiss(animated: true, completion: nil)
     
     if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
-      updatePostImageView(image: editedImage)
+      set(image: editedImage)
     } else if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-      updatePostImageView(image: image)
+      set(image: image)
     }
   }
 }

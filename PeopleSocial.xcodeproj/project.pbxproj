@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1498C2A80C1F2F4C55EA994E /* Pods_PeopleSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */; };
+		AD17168A21FA3F58003DCEE5 /* CreatePostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17168921FA3F58003DCEE5 /* CreatePostModel.swift */; };
 		AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */; };
 		AD2B1AB221F4B39800DE6246 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */; };
 		AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */; };
@@ -80,6 +81,7 @@
 		769746221C1FF84063DA2C1C /* Pods-PeopleSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.release.xcconfig"; sourceTree = "<group>"; };
 		8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD17168921FA3F58003DCEE5 /* CreatePostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostModel.swift; sourceTree = "<group>"; };
 		AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 				AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */,
 				AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */,
 				AD2B1ACB21F742DA00DE6246 /* Post.swift */,
+				AD17168921FA3F58003DCEE5 /* CreatePostModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				ADF19D9C21DE6BC9008B7455 /* RegisterViewController.swift in Sources */,
 				AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */,
 				ADF19D9521DE6230008B7455 /* Router.swift in Sources */,
+				AD17168A21FA3F58003DCEE5 /* CreatePostModel.swift in Sources */,
 				AD3370ED21E3873400EA3F96 /* Utilites.swift in Sources */,
 				AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */,
 				AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */,

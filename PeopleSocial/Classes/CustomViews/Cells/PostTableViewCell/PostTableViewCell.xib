@@ -26,7 +26,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-Jn-ieZ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-Jn-ieZ">
                         <rect key="frame" x="0.0" y="49.5" width="320" height="250"/>
                         <constraints>
                             <constraint firstAttribute="height" priority="999" constant="250" id="Apv-KE-KaF"/>
