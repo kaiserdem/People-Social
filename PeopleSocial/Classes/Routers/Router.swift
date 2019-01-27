@@ -31,13 +31,18 @@ class Router {
     let createPostTabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 0) // елемент бара
     createPostNC.tabBarItem = createPostTabBarItem // елемент соответствует контроллеру
     
+    let chatsVC = ChatsViewController()
+    let chatsNC = UINavigationController.init(rootViewController: chatsVC)
+    let chatsTabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
+    chatsNC.tabBarItem = chatsTabBarItem
+    
     let feedVC = FeedViewController()
     let feedNC = UINavigationController(rootViewController: feedVC)
     let feedTabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
     feedNC.tabBarItem = feedTabBarItem
     
     let tabBarVC = UITabBarController()
-    tabBarVC.setViewControllers([feedNC, createPostNC], animated: true)
+    tabBarVC.setViewControllers([feedNC, chatsNC, createPostNC], animated: true)
     return tabBarVC
   }
 }

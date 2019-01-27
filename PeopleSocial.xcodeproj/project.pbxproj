@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		1498C2A80C1F2F4C55EA994E /* Pods_PeopleSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */; };
 		AD17168A21FA3F58003DCEE5 /* CreatePostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17168921FA3F58003DCEE5 /* CreatePostModel.swift */; };
+		AD17168E21FB74C3003DCEE5 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17168C21FB74C3003DCEE5 /* ChatsViewController.swift */; };
+		AD17168F21FB74C3003DCEE5 /* ChatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD17168D21FB74C3003DCEE5 /* ChatsViewController.xib */; };
+		AD17169121FB7718003DCEE5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169021FB7718003DCEE5 /* UserManager.swift */; };
+		AD17169321FB7D95003DCEE5 /* PSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169221FB7D95003DCEE5 /* PSUser.swift */; };
+		AD17169621FCE1E6003DCEE5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169421FCE1E6003DCEE5 /* ChatViewController.swift */; };
+		AD17169721FCE1E6003DCEE5 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD17169521FCE1E6003DCEE5 /* ChatViewController.xib */; };
+		AD17169A21FCE7DC003DCEE5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169921FCE7DC003DCEE5 /* Message.swift */; };
+		AD17169C21FDF029003DCEE5 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169B21FDF029003DCEE5 /* ChatManager.swift */; };
 		AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */; };
 		AD2B1AB221F4B39800DE6246 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */; };
 		AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */; };
@@ -82,6 +90,14 @@
 		8B6031579909223CD2449496 /* Pods-PeopleSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleSocial/Pods-PeopleSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		A25AB869F2516183D45DD81F /* Pods_PeopleSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD17168921FA3F58003DCEE5 /* CreatePostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostModel.swift; sourceTree = "<group>"; };
+		AD17168C21FB74C3003DCEE5 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		AD17168D21FB74C3003DCEE5 /* ChatsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatsViewController.xib; sourceTree = "<group>"; };
+		AD17169021FB7718003DCEE5 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		AD17169221FB7D95003DCEE5 /* PSUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUser.swift; sourceTree = "<group>"; };
+		AD17169421FCE1E6003DCEE5 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		AD17169521FCE1E6003DCEE5 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		AD17169921FCE7DC003DCEE5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AD17169B21FDF029003DCEE5 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
@@ -172,6 +188,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AD17168B21FB745A003DCEE5 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				AD17168C21FB74C3003DCEE5 /* ChatsViewController.swift */,
+				AD17168D21FB74C3003DCEE5 /* ChatsViewController.xib */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		AD17169821FCE25A003DCEE5 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AD17169421FCE1E6003DCEE5 /* ChatViewController.swift */,
+				AD17169521FCE1E6003DCEE5 /* ChatViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		AD2B1AAE21F4B31300DE6246 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +286,7 @@
 				AD2B1ABA21F502D000DE6246 /* SecureStorageManager.swift */,
 				AD2B1AC721F737F900DE6246 /* PostManager.swift */,
 				AD2B1AC921F73AEE00DE6246 /* FirebaseManager.swift */,
+				AD17169B21FDF029003DCEE5 /* ChatManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -383,6 +418,9 @@
 				AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */,
 				AD2B1ACB21F742DA00DE6246 /* Post.swift */,
 				AD17168921FA3F58003DCEE5 /* CreatePostModel.swift */,
+				AD17169021FB7718003DCEE5 /* UserManager.swift */,
+				AD17169221FB7D95003DCEE5 /* PSUser.swift */,
+				AD17169921FCE7DC003DCEE5 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -412,6 +450,8 @@
 		ADF19D9021DE528A008B7455 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				AD17169821FCE25A003DCEE5 /* Chat */,
+				AD17168B21FB745A003DCEE5 /* Chats */,
 				AD2B1AC221F731C100DE6246 /* CreatePost */,
 				AD2B1AAE21F4B31300DE6246 /* Feed */,
 				ADF19D9E21DE6BCF008B7455 /* LoginVC */,
@@ -564,8 +604,10 @@
 				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
 				AD2B1AD421F7D62000DE6246 /* PostTableViewCell.xib in Resources */,
 				AD2B1AC621F7325D00DE6246 /* CreatePostViewController.xib in Resources */,
+				AD17169721FCE1E6003DCEE5 /* ChatViewController.xib in Resources */,
 				AD3370D521E24A8100EA3F96 /* SegmentTableViewCell.xib in Resources */,
 				AD3370DA21E2594B00EA3F96 /* TextTableViewCell.xib in Resources */,
+				AD17168F21FB74C3003DCEE5 /* ChatsViewController.xib in Resources */,
 				ADF19D5B21DE4ED8008B7455 /* GoogleService-Info.plist in Resources */,
 				AD2B1AC121F61D8700DE6246 /* LoginViewController.xib in Resources */,
 				ADF19D9321DE535E008B7455 /* ViewController.xib in Resources */,
@@ -649,11 +691,13 @@
 				AD2B1AC821F737F900DE6246 /* PostManager.swift in Sources */,
 				AD2B1AD321F7D62000DE6246 /* PostTableViewCell.swift in Sources */,
 				AD2B1ACA21F73AEE00DE6246 /* FirebaseManager.swift in Sources */,
+				AD17168E21FB74C3003DCEE5 /* ChatsViewController.swift in Sources */,
 				ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */,
 				AD2B1AD021F789F500DE6246 /* Extentions+Decodable.swift in Sources */,
 				AD2B1ACE21F7468F00DE6246 /* Extention+Encodable.swift in Sources */,
 				AD3370F521E518DA00EA3F96 /* FirebaseResult.swift in Sources */,
 				AD2F2F2421E52DD7003B4E85 /* TextField.swift in Sources */,
+				AD17169C21FDF029003DCEE5 /* ChatManager.swift in Sources */,
 				AD2B1AB721F4BDF100DE6246 /* UserHeaderView.swift in Sources */,
 				ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */,
 				AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */,
@@ -661,6 +705,7 @@
 				ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */,
 				ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */,
 				ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */,
+				AD17169A21FCE7DC003DCEE5 /* Message.swift in Sources */,
 				ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */,
 				ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */,
 				AD2B1ACC21F742DA00DE6246 /* Post.swift in Sources */,
@@ -673,6 +718,7 @@
 				ADF19D9521DE6230008B7455 /* Router.swift in Sources */,
 				AD17168A21FA3F58003DCEE5 /* CreatePostModel.swift in Sources */,
 				AD3370ED21E3873400EA3F96 /* Utilites.swift in Sources */,
+				AD17169121FB7718003DCEE5 /* UserManager.swift in Sources */,
 				AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */,
 				AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */,
 				AD2B1ABF21F6024700DE6246 /* Custom Errors.swift in Sources */,
@@ -680,11 +726,13 @@
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,
 				AD2B1AD721F8562B00DE6246 /* Extentions+TextView.swift in Sources */,
 				AD2B1AB921F4FCFC00DE6246 /* BiometricAuthManager .swift in Sources */,
+				AD17169321FB7D95003DCEE5 /* PSUser.swift in Sources */,
 				AD3370DE21E2651D00EA3F96 /* TextFieldTableViewCell.swift in Sources */,
 				AD3370EA21E37EE300EA3F96 /* AuthManager.swift in Sources */,
 				AD3370F121E4C4C100EA3F96 /* Validator.swift in Sources */,
 				ADF19DAF21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift in Sources */,
 				ADF19D9821DE6ADF008B7455 /* StartRouter.swift in Sources */,
+				AD17169621FCE1E6003DCEE5 /* ChatViewController.swift in Sources */,
 				AD3370F321E4C80100EA3F96 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
