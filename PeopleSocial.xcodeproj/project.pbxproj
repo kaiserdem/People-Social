@@ -60,6 +60,8 @@
 		ADE9123222009D8400971E4D /* TextMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE9123122009D8400971E4D /* TextMessageTableViewCell.swift */; };
 		ADE9123422009E2300971E4D /* MyTextMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE9123322009E2300971E4D /* MyTextMessageTableViewCell.xib */; };
 		ADE912362200A16400971E4D /* OponentTetxMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE912352200A16400971E4D /* OponentTetxMessageTableViewCell.xib */; };
+		ADE9123A2200AE5F00971E4D /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE912382200AE5F00971E4D /* UsersViewController.swift */; };
+		ADE9123B2200AE5F00971E4D /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE912392200AE5F00971E4D /* UsersViewController.xib */; };
 		ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */; };
 		ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3C21DE4E85008B7455 /* ViewController.swift */; };
 		ADF19D4221DE4E87008B7455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D4121DE4E87008B7455 /* Assets.xcassets */; };
@@ -148,6 +150,8 @@
 		ADE9123122009D8400971E4D /* TextMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageTableViewCell.swift; sourceTree = "<group>"; };
 		ADE9123322009E2300971E4D /* MyTextMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTextMessageTableViewCell.xib; sourceTree = "<group>"; };
 		ADE912352200A16400971E4D /* OponentTetxMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OponentTetxMessageTableViewCell.xib; sourceTree = "<group>"; };
+		ADE912382200AE5F00971E4D /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		ADE912392200AE5F00971E4D /* UsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
 		ADF19D3721DE4E85008B7455 /* PeopleSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF19D3C21DE4E85008B7455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -338,6 +342,8 @@
 		ADE912372200AD6300971E4D /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				ADE912382200AE5F00971E4D /* UsersViewController.swift */,
+				ADE912392200AE5F00971E4D /* UsersViewController.xib */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -638,6 +644,7 @@
 				ADF19D9D21DE6BC9008B7455 /* RegisterViewController.xib in Resources */,
 				AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */,
 				AD3370DF21E2651D00EA3F96 /* TextFieldTableViewCell.xib in Resources */,
+				ADE9123B2200AE5F00971E4D /* UsersViewController.xib in Resources */,
 				ADE912362200A16400971E4D /* OponentTetxMessageTableViewCell.xib in Resources */,
 				AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */,
 				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
@@ -759,6 +766,7 @@
 				AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */,
 				ADF19D9521DE6230008B7455 /* Router.swift in Sources */,
 				AD17168A21FA3F58003DCEE5 /* CreatePostModel.swift in Sources */,
+				ADE9123A2200AE5F00971E4D /* UsersViewController.swift in Sources */,
 				AD3370ED21E3873400EA3F96 /* Utilites.swift in Sources */,
 				AD17169121FB7718003DCEE5 /* UserManager.swift in Sources */,
 				AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */,

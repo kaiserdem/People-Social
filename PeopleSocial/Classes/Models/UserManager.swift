@@ -30,7 +30,7 @@ final class UserManager: FirebaseManager {
       if let dict = (snapshot.value as? [String:[String: Any]]) {
         completion(dict.map({ (userDict) -> PSUser in
           return try! PSUser(from: userDict.value)
-        }))
+        }).filter { $0.id != self.currentUser?.id }) // не показывать себя в ветке все пользователей
       }
     }
   }

@@ -24,7 +24,7 @@ class TextMessageTableViewCell: UITableViewCell {
   }
   
   func configure(by message: Message) {
-    message.text = message.getText()
+    messageLable.text = message.getText()
     timeLable.text = message.getFormatTime()
   }
 }

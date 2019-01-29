@@ -33,8 +33,13 @@ class Router {
     
     let chatsVC = ChatsViewController()
     let chatsNC = UINavigationController.init(rootViewController: chatsVC)
-    let chatsTabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
+    let chatsTabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
     chatsNC.tabBarItem = chatsTabBarItem
+    
+    let usersVC = UsersViewController()
+    let usersNC = UINavigationController.init(rootViewController: usersVC)
+    let usersTabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
+    usersNC.tabBarItem = usersTabBarItem
     
     let feedVC = FeedViewController()
     let feedNC = UINavigationController(rootViewController: feedVC)
@@ -42,7 +47,7 @@ class Router {
     feedNC.tabBarItem = feedTabBarItem
     
     let tabBarVC = UITabBarController()
-    tabBarVC.setViewControllers([feedNC, chatsNC, createPostNC], animated: true)
+    tabBarVC.setViewControllers([feedNC, usersNC, chatsNC, createPostNC], animated: true)
     return tabBarVC
   }
 }

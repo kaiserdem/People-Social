@@ -17,7 +17,7 @@ final class ChatController: NSObject {
     return viewController?.tableView
   }
   var chat: Chat?
-  private let dataProvider = ChatDataProvider()
+  private let dataProvider = ChatDataProvider() 
   
   init(viewController: ChatViewController, chat: Chat?) { // инициализируем вю контроллре и сущность
     self.viewController = viewController

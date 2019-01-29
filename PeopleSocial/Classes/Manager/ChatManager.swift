@@ -24,7 +24,7 @@ final class ChatManager: FirebaseManager {
   // загрузить чат если необходимо
   func startChatIfNedded(chat: Chat, callback: @escaping VoidClosure) {
     checkIsChatExist(chat: chat) { (result) in
-      if result {
+      if !result {
         self.startChat(chat: chat, callback: callback)
       }
     }
