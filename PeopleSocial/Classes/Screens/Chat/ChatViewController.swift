@@ -26,6 +26,7 @@ class ChatViewController: UIViewController { //  контроллре отобр
   override func viewDidLoad() {
     super.viewDidLoad()
     controller.viewDidLoad()
+    tableView.separatorColor = .clear //убрать сепаратор
   }
   @IBAction func sendClicked() {
     let text = textField.text

@@ -57,6 +57,9 @@
 		AD3370F521E518DA00EA3F96 /* FirebaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */; };
 		AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4033AE21E226E700107713 /* HeaderTitleView.swift */; };
 		AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4033B221E228BE00107713 /* HeaderTitleView.xib */; };
+		ADE9123222009D8400971E4D /* TextMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE9123122009D8400971E4D /* TextMessageTableViewCell.swift */; };
+		ADE9123422009E2300971E4D /* MyTextMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE9123322009E2300971E4D /* MyTextMessageTableViewCell.xib */; };
+		ADE912362200A16400971E4D /* OponentTetxMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE912352200A16400971E4D /* OponentTetxMessageTableViewCell.xib */; };
 		ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */; };
 		ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19D3C21DE4E85008B7455 /* ViewController.swift */; };
 		ADF19D4221DE4E87008B7455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF19D4121DE4E87008B7455 /* Assets.xcassets */; };
@@ -142,6 +145,9 @@
 		AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseResult.swift; sourceTree = "<group>"; };
 		AD4033AE21E226E700107713 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
 		AD4033B221E228BE00107713 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
+		ADE9123122009D8400971E4D /* TextMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageTableViewCell.swift; sourceTree = "<group>"; };
+		ADE9123322009E2300971E4D /* MyTextMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTextMessageTableViewCell.xib; sourceTree = "<group>"; };
+		ADE912352200A16400971E4D /* OponentTetxMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OponentTetxMessageTableViewCell.xib; sourceTree = "<group>"; };
 		ADF19D3721DE4E85008B7455 /* PeopleSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF19D3A21DE4E85008B7455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF19D3C21DE4E85008B7455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -319,6 +325,23 @@
 			path = HeaderTitleView;
 			sourceTree = "<group>";
 		};
+		ADE9123022009D5000971E4D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				ADE9123122009D8400971E4D /* TextMessageTableViewCell.swift */,
+				ADE9123322009E2300971E4D /* MyTextMessageTableViewCell.xib */,
+				ADE912352200A16400971E4D /* OponentTetxMessageTableViewCell.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		ADE912372200AD6300971E4D /* Users */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 		ADF19D2E21DE4E85008B7455 = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +422,7 @@
 		ADF19D8B21DE5240008B7455 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				ADE9123022009D5000971E4D /* Chat */,
 				AD2B1AD521F7D62E00DE6246 /* PostTableViewCell */,
 				AD3370DB21E2645E00EA3F96 /* TextFieldCell */,
 				AD3370D621E2592E00EA3F96 /* TextCell */,
@@ -462,6 +486,7 @@
 		ADF19D9021DE528A008B7455 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ADE912372200AD6300971E4D /* Users */,
 				AD17169821FCE25A003DCEE5 /* Chat */,
 				AD17168B21FB745A003DCEE5 /* Chats */,
 				AD2B1AC221F731C100DE6246 /* CreatePost */,
@@ -608,10 +633,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE9123422009E2300971E4D /* MyTextMessageTableViewCell.xib in Resources */,
 				ADF19D4521DE4E87008B7455 /* LaunchScreen.storyboard in Resources */,
 				ADF19D9D21DE6BC9008B7455 /* RegisterViewController.xib in Resources */,
 				AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */,
 				AD3370DF21E2651D00EA3F96 /* TextFieldTableViewCell.xib in Resources */,
+				ADE912362200A16400971E4D /* OponentTetxMessageTableViewCell.xib in Resources */,
 				AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */,
 				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
 				AD2B1AD421F7D62000DE6246 /* PostTableViewCell.xib in Resources */,
@@ -749,6 +776,7 @@
 				ADF19DAF21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift in Sources */,
 				ADF19D9821DE6ADF008B7455 /* StartRouter.swift in Sources */,
 				AD17169621FCE1E6003DCEE5 /* ChatViewController.swift in Sources */,
+				ADE9123222009D8400971E4D /* TextMessageTableViewCell.swift in Sources */,
 				AD3370F321E4C80100EA3F96 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

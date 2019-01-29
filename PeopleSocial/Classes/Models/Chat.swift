@@ -13,7 +13,7 @@ class Chat: Codable {
   var messages:[Message] = [] // масив сообщений
   var users: [PSUser] = [] // масив пользователей
   
-  init(id: String, users: [PSUser]) {
+  init(id: String, users: [PSUser]) { // для первого чата
     self.id = id
     self.users = users
   }

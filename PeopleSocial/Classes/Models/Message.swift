@@ -17,6 +17,9 @@ final class Message: Codable { // модель сообщений
   init() { // инициализатор для id
     id = UUID().uuidString
   }
+  var isSenderOponent: Bool {
+    return senderId != UserManager.shared.currentUser?.id
+  }
   convenience init(text: String) {
     self.init()
     self.senderId = UserManager.shared.currentUser?.id
@@ -25,5 +28,15 @@ final class Message: Codable { // модель сообщений
   }
   func getText() -> String { // получаем текст
      return text ?? "" // если текст не существует отправляем пустую переменную
+  }
+  func getFormatTime() -> String {// возвращает время в нужном виде
+    if let time = time {
+      let date = Date.init(timeIntervalSince1970: time)
+      let dateFormatter = DateFormatter()
+      dateFormatter.dateFormat = "HH:mm"
+      return dateFormatter.string(from: date)
+    } else {
+      return "???"
+    }
   }
 }
