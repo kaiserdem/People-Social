@@ -17,6 +17,10 @@
 		AD17169721FCE1E6003DCEE5 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD17169521FCE1E6003DCEE5 /* ChatViewController.xib */; };
 		AD17169A21FCE7DC003DCEE5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169921FCE7DC003DCEE5 /* Message.swift */; };
 		AD17169C21FDF029003DCEE5 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169B21FDF029003DCEE5 /* ChatManager.swift */; };
+		AD17169E21FE4941003DCEE5 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169D21FE4941003DCEE5 /* ChatController.swift */; };
+		AD1716A021FE4B1D003DCEE5 /* Lifecyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169F21FE4B1D003DCEE5 /* Lifecyclable.swift */; };
+		AD1716A221FE5010003DCEE5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1716A121FE5010003DCEE5 /* Chat.swift */; };
+		AD1716A421FE6C08003DCEE5 /* ChatDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1716A321FE6C08003DCEE5 /* ChatDataProvider.swift */; };
 		AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */; };
 		AD2B1AB221F4B39800DE6246 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */; };
 		AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */; };
@@ -98,6 +102,10 @@
 		AD17169521FCE1E6003DCEE5 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		AD17169921FCE7DC003DCEE5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		AD17169B21FDF029003DCEE5 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		AD17169D21FE4941003DCEE5 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		AD17169F21FE4B1D003DCEE5 /* Lifecyclable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifecyclable.swift; sourceTree = "<group>"; };
+		AD1716A121FE5010003DCEE5 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		AD1716A321FE6C08003DCEE5 /* ChatDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataProvider.swift; sourceTree = "<group>"; };
 		AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
@@ -202,6 +210,8 @@
 			children = (
 				AD17169421FCE1E6003DCEE5 /* ChatViewController.swift */,
 				AD17169521FCE1E6003DCEE5 /* ChatViewController.xib */,
+				AD17169D21FE4941003DCEE5 /* ChatController.swift */,
+				AD1716A321FE6C08003DCEE5 /* ChatDataProvider.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -381,6 +391,7 @@
 				ADF19DAA21DE7388008B7455 /* NibLoadable.swift */,
 				ADF19DAC21DE75BA008B7455 /* Typealias.swift */,
 				AD3370CF21E23AE900EA3F96 /* CellHeaderProtocol.swift */,
+				AD17169F21FE4B1D003DCEE5 /* Lifecyclable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -421,6 +432,7 @@
 				AD17169021FB7718003DCEE5 /* UserManager.swift */,
 				AD17169221FB7D95003DCEE5 /* PSUser.swift */,
 				AD17169921FCE7DC003DCEE5 /* Message.swift */,
+				AD1716A121FE5010003DCEE5 /* Chat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -690,6 +702,7 @@
 				AD3370E521E2809200EA3F96 /* Sex.swift in Sources */,
 				AD2B1AC821F737F900DE6246 /* PostManager.swift in Sources */,
 				AD2B1AD321F7D62000DE6246 /* PostTableViewCell.swift in Sources */,
+				AD1716A221FE5010003DCEE5 /* Chat.swift in Sources */,
 				AD2B1ACA21F73AEE00DE6246 /* FirebaseManager.swift in Sources */,
 				AD17168E21FB74C3003DCEE5 /* ChatsViewController.swift in Sources */,
 				ADF19DA121DE6BE9008B7455 /* LoginViewController.swift in Sources */,
@@ -702,6 +715,8 @@
 				ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */,
 				AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */,
 				AD2B1AC521F7325D00DE6246 /* CreatePostViewController.swift in Sources */,
+				AD1716A021FE4B1D003DCEE5 /* Lifecyclable.swift in Sources */,
+				AD1716A421FE6C08003DCEE5 /* ChatDataProvider.swift in Sources */,
 				ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */,
 				ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */,
 				ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */,
@@ -722,6 +737,7 @@
 				AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */,
 				AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */,
 				AD2B1ABF21F6024700DE6246 /* Custom Errors.swift in Sources */,
+				AD17169E21FE4941003DCEE5 /* ChatController.swift in Sources */,
 				AD3370E321E2803000EA3F96 /* RegisterModel.swift in Sources */,
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,
 				AD2B1AD721F8562B00DE6246 /* Extentions+TextView.swift in Sources */,

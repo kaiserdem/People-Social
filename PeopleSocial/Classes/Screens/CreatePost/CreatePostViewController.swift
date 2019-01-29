@@ -10,7 +10,7 @@ import UIKit
 
 class CreatePostViewController: UIViewController {
   
-  @IBOutlet weak var textView: UITextView!
+  @IBOutlet weak var textView: TextView!
   @IBOutlet weak var doneButton: UIButton!
   @IBOutlet weak var postImageView: UIImageView!
   @IBOutlet weak var crossImageView: UIImageView!

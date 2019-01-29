@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UITextView: UITextViewDelegate {
+final class TextView: UITextView {
   
-  override open var bounds: CGRect {
+  override public var bounds: CGRect {
     didSet {
       self.resizePlaceholder()
     }
@@ -33,14 +33,11 @@ extension UITextView: UITextViewDelegate {
       }
     }
 }
-
-  public func textViewDidChange(_ textView:UITextView) { // прячем в завистимотри от поведения
-    if let placeholderLable = self.viewWithTag(100) as? UILabel {
-      placeholderLable.isHidden = self.text.count > 0
-    }
+  deinit {
+    NotificationCenter.default.removeObserver(self, name: UITextView.textDidChangeNotification, object: nil)
   }
 }
-  private extension UITextView {
+  private extension TextView {
     
     func resizePlaceholder() {
       if let placeholderLable = self.viewWithTag(100) as! UILabel? {
@@ -68,6 +65,12 @@ extension UITextView: UITextViewDelegate {
       
       self.addSubview(placeholderLable)
       self.resizePlaceholder()
-      self.delegate = self
+      
+      NotificationCenter.default.addObserver(self, selector: #selector(textViewDidChange), name: UITextView.textDidChangeNotification, object: nil)
+    }
+    @objc func textViewDidChange() {
+      if let placeholderLable = self.viewWithTag(100) as? UILabel {
+        placeholderLable.isHidden = self.text.count > 0
+      }
     }
 }

@@ -15,7 +15,10 @@ class FirebaseManager {
    var sourceRef: DatabaseReference {
     return Database.database().reference()
   }
-   var usersRef: DatabaseReference {
+   var usersRef: DatabaseReference { // создаем ветку
     return sourceRef.child("users")
+  }
+  var chatsRef: DatabaseReference { // создаем ветку
+    return sourceRef.child("chats")
   }
 }

@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="PeopleSocial" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="vjB-my-qrj" id="hDq-ge-rTq"/>
+                <outlet property="textField" destination="ewG-DG-qzi" id="phJ-ae-Sge"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vjB-my-qrj">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vjB-my-qrj">
                     <rect key="frame" x="0.0" y="20" width="375" height="601"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
@@ -34,6 +35,9 @@
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVI-uF-Nud">
                     <rect key="frame" x="323" y="629" width="36" height="30"/>
                     <state key="normal" title="Send"/>
+                    <connections>
+                        <action selector="sendClicked" destination="-1" eventType="touchUpInside" id="y60-p0-zCk"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -48,7 +52,6 @@
                 <constraint firstItem="ewG-DG-qzi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hpx-py-dlb"/>
                 <constraint firstItem="qVI-uF-Nud" firstAttribute="leading" secondItem="ewG-DG-qzi" secondAttribute="trailing" constant="8" id="vwm-5T-H1X"/>
                 <constraint firstItem="vjB-my-qrj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="x2T-Zd-LFI"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vjB-my-qrj" secondAttribute="bottom" id="y0F-8i-pCV"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>

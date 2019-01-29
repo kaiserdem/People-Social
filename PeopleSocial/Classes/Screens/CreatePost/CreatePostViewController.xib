@@ -16,7 +16,7 @@
                 <outlet property="crossImageView" destination="hUl-la-uDa" id="CVA-Tt-xe1"/>
                 <outlet property="doneButton" destination="nRT-hl-mab" id="ETP-1t-6Cb"/>
                 <outlet property="postImageView" destination="efS-UF-5ly" id="vsF-5W-nNL"/>
-                <outlet property="textView" destination="mbo-eb-xiV" id="1Fq-EV-oww"/>
+                <outlet property="textView" destination="mbo-eb-xiV" id="R0D-Og-i0q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -57,7 +57,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mbo-eb-xiV">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mbo-eb-xiV" customClass="TextView" customModule="PeopleSocial" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="216.5" width="375" height="33"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>

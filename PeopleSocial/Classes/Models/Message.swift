@@ -17,4 +17,13 @@ final class Message: Codable { // модель сообщений
   init() { // инициализатор для id
     id = UUID().uuidString
   }
+  convenience init(text: String) {
+    self.init()
+    self.senderId = UserManager.shared.currentUser?.id
+    self.text = text
+    self.time = Date().timeIntervalSince1970
+  }
+  func getText() -> String { // получаем текст
+     return text ?? "" // если текст не существует отправляем пустую переменную
+  }
 }

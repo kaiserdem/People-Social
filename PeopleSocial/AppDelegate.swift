@@ -19,11 +19,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     Router.shared.root(&window) // зугружает нужное окно
     FirebaseApp.configure()
-    AuthManager.shared.singInIfNeeded()
-    
-//    SecureStorageManager.shared.eraseUserDataIfNedded() // удалить пользовательскте данные
-    
+    AuthManager.shared.singInIfNeeded { [unowned self] _ in
+      UserManager.shared.fetchCurrentUser()
+    }
     return true
   }
 }
 
+
+//UserManager.shared.loadingUsers { users in
+//  let chat = Chat(id:"newChat", users:[users.first!, UserManager.shared.currentUser!])
+//  ChatManager.shared.startChat(chat: chat, callback: {
+//
+//  })
+//}
+
+
+
+//    let chat = Chat()
+//        chat.id = "13"
+//    ChatManager.shared.loadingMessages(chat: chat) { (messages) in
+//      print(messages)
+//    }
+
+
+//    let message = Message()
+//    message.senderId = "13"
+//    message.text = "Test"
+//    message.time = Date().timeIntervalSince1970
+//    let chat = Chat()
+//    chat.id = "123"
+//    ChatManager.shared.send(message: message, on: chat)
+
+//    SecureStorageManager.shared.eraseUserDataIfNedded() // удалить пользовательскте данные

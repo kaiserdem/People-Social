@@ -8,32 +8,28 @@
 
 import UIKit
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController { //  контроллре отображения
 
   @IBOutlet weak var tableView: UITableView!
   
+  @IBOutlet weak var textField: UITextField!
+
+  private var user: PSUser? // контроллер принимает сущность
+  private var chat: Chat?
+  private lazy var controller = ChatController.init(viewController: self, chat: chat!) // обьявляем
+  
+  convenience init(user: PSUser, chat: Chat) { // инициализируем сущность
+    self.init()
+    self.user = user
+    self.chat = chat
+  }
   override func viewDidLoad() {
     super.viewDidLoad()
-    delegating()
-   
+    controller.viewDidLoad()
   }
-  private func delegating() {
-    tableView.delegate = self
-    tableView.dataSource = self
-  }
-}
-extension ChatViewController: UITableViewDelegate {
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 44
+  @IBAction func sendClicked() {
+    let text = textField.text
+    controller.sendButtonClicked(with: text) // передаем текст в контроллер
   }
 }
-extension ChatViewController: UITableViewDataSource {
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = UITableViewCell()
-    
-    return cell
-  }
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
-  }
-}
+
