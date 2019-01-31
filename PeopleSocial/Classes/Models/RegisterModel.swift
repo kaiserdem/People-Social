@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterModel {  // создаем модель
+class RegisterModel {  // модель пароля
   var photo: UIImage?
   var email: String?
   var password: String?

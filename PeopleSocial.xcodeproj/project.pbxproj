@@ -21,6 +21,16 @@
 		AD1716A021FE4B1D003DCEE5 /* Lifecyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17169F21FE4B1D003DCEE5 /* Lifecyclable.swift */; };
 		AD1716A221FE5010003DCEE5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1716A121FE5010003DCEE5 /* Chat.swift */; };
 		AD1716A421FE6C08003DCEE5 /* ChatDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1716A321FE6C08003DCEE5 /* ChatDataProvider.swift */; };
+		AD2612B72200DF9C00DECD95 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2612B62200DF9C00DECD95 /* SearchViewController.swift */; };
+		AD2612B92200E7C600DECD95 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2612B82200E7C600DECD95 /* SearchViewController.xib */; };
+		AD2612BD2200F81800DECD95 /* DetailFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2612BB2200F81800DECD95 /* DetailFieldTableViewCell.swift */; };
+		AD2612BE2200F81800DECD95 /* DetailFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2612BC2200F81800DECD95 /* DetailFieldTableViewCell.xib */; };
+		AD2612C12201DBDA00DECD95 /* TextFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2612C02201DBDA00DECD95 /* TextFooterView.swift */; };
+		AD2612C42201DC4A00DECD95 /* TextFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2612C32201DC4A00DECD95 /* TextFooterView.xib */; };
+		AD2612C72201DE0200DECD95 /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2612C62201DE0200DECD95 /* TitleHeaderView.swift */; };
+		AD2612C92201DE2A00DECD95 /* TitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2612C82201DE2A00DECD95 /* TitleHeaderView.xib */; };
+		AD2612CC2201E44200DECD95 /* Extention+UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2612CB2201E44200DECD95 /* Extention+UINavigationBar.swift */; };
+		AD2612D022035E3300DECD95 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2612CF22035E3300DECD95 /* LoginModel.swift */; };
 		AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */; };
 		AD2B1AB221F4B39800DE6246 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */; };
 		AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */; };
@@ -111,6 +121,16 @@
 		AD17169F21FE4B1D003DCEE5 /* Lifecyclable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifecyclable.swift; sourceTree = "<group>"; };
 		AD1716A121FE5010003DCEE5 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		AD1716A321FE6C08003DCEE5 /* ChatDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataProvider.swift; sourceTree = "<group>"; };
+		AD2612B62200DF9C00DECD95 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AD2612B82200E7C600DECD95 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		AD2612BB2200F81800DECD95 /* DetailFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFieldTableViewCell.swift; sourceTree = "<group>"; };
+		AD2612BC2200F81800DECD95 /* DetailFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFieldTableViewCell.xib; sourceTree = "<group>"; };
+		AD2612C02201DBDA00DECD95 /* TextFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFooterView.swift; sourceTree = "<group>"; };
+		AD2612C32201DC4A00DECD95 /* TextFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFooterView.xib; sourceTree = "<group>"; };
+		AD2612C62201DE0200DECD95 /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
+		AD2612C82201DE2A00DECD95 /* TitleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleHeaderView.xib; sourceTree = "<group>"; };
+		AD2612CB2201E44200DECD95 /* Extention+UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UINavigationBar.swift"; sourceTree = "<group>"; };
+		AD2612CF22035E3300DECD95 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
@@ -224,6 +244,58 @@
 				AD1716A321FE6C08003DCEE5 /* ChatDataProvider.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		AD2612B52200DF6500DECD95 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AD2612B62200DF9C00DECD95 /* SearchViewController.swift */,
+				AD2612B82200E7C600DECD95 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AD2612BA2200F2EB00DECD95 /* DetailFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				AD2612BB2200F81800DECD95 /* DetailFieldTableViewCell.swift */,
+				AD2612BC2200F81800DECD95 /* DetailFieldTableViewCell.xib */,
+			);
+			path = DetailFieldCell;
+			sourceTree = "<group>";
+		};
+		AD2612BF2201DB7F00DECD95 /* Footers */ = {
+			isa = PBXGroup;
+			children = (
+				AD2612C22201DBFB00DECD95 /* TextView */,
+			);
+			path = Footers;
+			sourceTree = "<group>";
+		};
+		AD2612C22201DBFB00DECD95 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				AD2612C02201DBDA00DECD95 /* TextFooterView.swift */,
+				AD2612C32201DC4A00DECD95 /* TextFooterView.xib */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		AD2612C52201DDDD00DECD95 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				AD2612C62201DE0200DECD95 /* TitleHeaderView.swift */,
+				AD2612C82201DE2A00DECD95 /* TitleHeaderView.xib */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		AD2612CA2201DED400DECD95 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				AD2612C52201DDDD00DECD95 /* Title */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		AD2B1AAE21F4B31300DE6246 /* Feed */ = {
@@ -428,6 +500,7 @@
 		ADF19D8B21DE5240008B7455 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AD2612BA2200F2EB00DECD95 /* DetailFieldCell */,
 				ADE9123022009D5000971E4D /* Chat */,
 				AD2B1AD521F7D62E00DE6246 /* PostTableViewCell */,
 				AD3370DB21E2645E00EA3F96 /* TextFieldCell */,
@@ -441,6 +514,8 @@
 		ADF19D8C21DE524D008B7455 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				AD2612CA2201DED400DECD95 /* Header */,
+				AD2612BF2201DB7F00DECD95 /* Footers */,
 				AD2B1AB321F4B6F700DE6246 /* UserHeader */,
 				AD2F2F2221E52D66003B4E85 /* TextFields */,
 				AD4033AD21E226DB00107713 /* HeaderTitleView */,
@@ -463,6 +538,7 @@
 				AD17169221FB7D95003DCEE5 /* PSUser.swift */,
 				AD17169921FCE7DC003DCEE5 /* Message.swift */,
 				AD1716A121FE5010003DCEE5 /* Chat.swift */,
+				AD2612CF22035E3300DECD95 /* LoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -476,6 +552,7 @@
 				AD2B1ACD21F7468F00DE6246 /* Extention+Encodable.swift */,
 				AD2B1ACF21F789F500DE6246 /* Extentions+Decodable.swift */,
 				AD2B1AD621F8562B00DE6246 /* Extentions+TextView.swift */,
+				AD2612CB2201E44200DECD95 /* Extention+UINavigationBar.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -492,6 +569,7 @@
 		ADF19D9021DE528A008B7455 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				AD2612B52200DF6500DECD95 /* Search */,
 				ADE912372200AD6300971E4D /* Users */,
 				AD17169821FCE25A003DCEE5 /* Chat */,
 				AD17168B21FB745A003DCEE5 /* Chats */,
@@ -640,6 +718,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE9123422009E2300971E4D /* MyTextMessageTableViewCell.xib in Resources */,
+				AD2612BE2200F81800DECD95 /* DetailFieldTableViewCell.xib in Resources */,
 				ADF19D4521DE4E87008B7455 /* LaunchScreen.storyboard in Resources */,
 				ADF19D9D21DE6BC9008B7455 /* RegisterViewController.xib in Resources */,
 				AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */,
@@ -654,11 +733,14 @@
 				AD3370D521E24A8100EA3F96 /* SegmentTableViewCell.xib in Resources */,
 				AD3370DA21E2594B00EA3F96 /* TextTableViewCell.xib in Resources */,
 				AD17168F21FB74C3003DCEE5 /* ChatsViewController.xib in Resources */,
+				AD2612C42201DC4A00DECD95 /* TextFooterView.xib in Resources */,
 				ADF19D5B21DE4ED8008B7455 /* GoogleService-Info.plist in Resources */,
+				AD2612C92201DE2A00DECD95 /* TitleHeaderView.xib in Resources */,
 				AD2B1AC121F61D8700DE6246 /* LoginViewController.xib in Resources */,
 				ADF19D9321DE535E008B7455 /* ViewController.xib in Resources */,
 				AD2B1AB221F4B39800DE6246 /* FeedViewController.xib in Resources */,
 				ADF19D4221DE4E87008B7455 /* Assets.xcassets in Resources */,
+				AD2612B92200E7C600DECD95 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +815,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2612D022035E3300DECD95 /* LoginModel.swift in Sources */,
 				AD3370E521E2809200EA3F96 /* Sex.swift in Sources */,
 				AD2B1AC821F737F900DE6246 /* PostManager.swift in Sources */,
 				AD2B1AD321F7D62000DE6246 /* PostTableViewCell.swift in Sources */,
@@ -750,6 +833,7 @@
 				AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */,
 				AD2B1AC521F7325D00DE6246 /* CreatePostViewController.swift in Sources */,
 				AD1716A021FE4B1D003DCEE5 /* Lifecyclable.swift in Sources */,
+				AD2612C12201DBDA00DECD95 /* TextFooterView.swift in Sources */,
 				AD1716A421FE6C08003DCEE5 /* ChatDataProvider.swift in Sources */,
 				ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */,
 				ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */,
@@ -757,12 +841,14 @@
 				AD17169A21FCE7DC003DCEE5 /* Message.swift in Sources */,
 				ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */,
 				ADF19DA521DE7009008B7455 /* PhotoView.swift in Sources */,
+				AD2612C72201DE0200DECD95 /* TitleHeaderView.swift in Sources */,
 				AD2B1ACC21F742DA00DE6246 /* Post.swift in Sources */,
 				AD2B1ABB21F502D000DE6246 /* SecureStorageManager.swift in Sources */,
 				ADF19DA721DE703E008B7455 /* Extention+View.swift in Sources */,
 				AD3370E721E286CC00EA3F96 /* Extention+UIViewController.swift in Sources */,
 				AD3370D021E23AE900EA3F96 /* CellHeaderProtocol.swift in Sources */,
 				ADF19D9C21DE6BC9008B7455 /* RegisterViewController.swift in Sources */,
+				AD2612B72200DF9C00DECD95 /* SearchViewController.swift in Sources */,
 				AD3370D421E24A8100EA3F96 /* SegmentTableViewCell.swift in Sources */,
 				ADF19D9521DE6230008B7455 /* Router.swift in Sources */,
 				AD17168A21FA3F58003DCEE5 /* CreatePostModel.swift in Sources */,
@@ -778,11 +864,13 @@
 				AD2B1AD721F8562B00DE6246 /* Extentions+TextView.swift in Sources */,
 				AD2B1AB921F4FCFC00DE6246 /* BiometricAuthManager .swift in Sources */,
 				AD17169321FB7D95003DCEE5 /* PSUser.swift in Sources */,
+				AD2612CC2201E44200DECD95 /* Extention+UINavigationBar.swift in Sources */,
 				AD3370DE21E2651D00EA3F96 /* TextFieldTableViewCell.swift in Sources */,
 				AD3370EA21E37EE300EA3F96 /* AuthManager.swift in Sources */,
 				AD3370F121E4C4C100EA3F96 /* Validator.swift in Sources */,
 				ADF19DAF21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift in Sources */,
 				ADF19D9821DE6ADF008B7455 /* StartRouter.swift in Sources */,
+				AD2612BD2200F81800DECD95 /* DetailFieldTableViewCell.swift in Sources */,
 				AD17169621FCE1E6003DCEE5 /* ChatViewController.swift in Sources */,
 				ADE9123222009D8400971E4D /* TextMessageTableViewCell.swift in Sources */,
 				AD3370F321E4C80100EA3F96 /* StorageManager.swift in Sources */,
