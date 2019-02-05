@@ -60,7 +60,7 @@ class RegisterViewController: UIViewController, NibLoadable {
   }
   
   private func registerCells() { // регистрируем ячейку
-    tableView.register(InfoUserTableViewCell.nib, forCellReuseIdentifier: InfoUserTableViewCell.name)
+   // tableView.register(InfoUserTableViewCell.nib, forCellReuseIdentifier: InfoUserTableViewCell.name)
     
     tableView.register(SegmentTableViewCell.nib, forCellReuseIdentifier: SegmentTableViewCell.name)
     
@@ -190,22 +190,23 @@ extension RegisterViewController: UITableViewDataSource {
     let model = models[indexPath.section].cellModels[indexPath.row]
     switch model {
     case .userInfo:
-      if let cell = tableView.dequeueReusableCell(withIdentifier: InfoUserTableViewCell.name, for: indexPath) as? InfoUserTableViewCell {
-        cell.emailTextChanged = {
-          text in
-          self.registerModel.email = text
-          self.updateDoneButtonStatus() // статус кнопки Done
-        }
-        cell.passwordTextChanged = {
-          text in
-          self.registerModel.password = text
-          self.updateDoneButtonStatus() // статус кнопки Done
-
-        }
-        cell.photoViewClicked = self.photoViewClicked // картинка по касанию
-        cell.set(image: registerModel.photo) // картинка из модели
-        return cell
-      }
+      return UITableViewCell()
+//      if let cell = tableView.dequeueReusableCell(withIdentifier: InfoUserTableViewCell.name, for: indexPath) as? InfoUserTableViewCell {
+//        cell.emailTextChanged = {
+//          text in
+//          self.registerModel.email = text
+//          self.updateDoneButtonStatus() // статус кнопки Done
+//        }
+//        cell.passwordTextChanged = {
+//          text in
+//          self.registerModel.password = text
+//          self.updateDoneButtonStatus() // статус кнопки Done
+//
+//        }
+//        cell.photoViewClicked = self.photoViewClicked // картинка по касанию
+//        cell.set(image: registerModel.photo) // картинка из модели
+//        return cell
+//      }
     case .sex:
       if let cell = tableView.dequeueReusableCell(withIdentifier: SegmentTableViewCell.name, for: indexPath) as? SegmentTableViewCell {
         cell.set(titels: sexModels.map{$0.rawValue.capitalized})

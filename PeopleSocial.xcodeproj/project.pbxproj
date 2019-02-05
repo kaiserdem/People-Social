@@ -69,6 +69,9 @@
 		AD3370F521E518DA00EA3F96 /* FirebaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */; };
 		AD4033AF21E226E700107713 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4033AE21E226E700107713 /* HeaderTitleView.swift */; };
 		AD4033B321E228BE00107713 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4033B221E228BE00107713 /* HeaderTitleView.xib */; };
+		ADBD3D062209B6D20009AAA3 /* CustomSegmentedControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD3D052209B6D20009AAA3 /* CustomSegmentedControll.swift */; };
+		ADBD3D082209BB4D0009AAA3 /* CustomSegmentedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD3D072209BB4D0009AAA3 /* CustomSegmentedItemView.swift */; };
+		ADBD3D0A2209C3020009AAA3 /* ContentWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD3D092209C3020009AAA3 /* ContentWidth.swift */; };
 		ADE9123222009D8400971E4D /* TextMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE9123122009D8400971E4D /* TextMessageTableViewCell.swift */; };
 		ADE9123422009E2300971E4D /* MyTextMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE9123322009E2300971E4D /* MyTextMessageTableViewCell.xib */; };
 		ADE912362200A16400971E4D /* OponentTetxMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE912352200A16400971E4D /* OponentTetxMessageTableViewCell.xib */; };
@@ -169,6 +172,9 @@
 		AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseResult.swift; sourceTree = "<group>"; };
 		AD4033AE21E226E700107713 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
 		AD4033B221E228BE00107713 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
+		ADBD3D052209B6D20009AAA3 /* CustomSegmentedControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControll.swift; sourceTree = "<group>"; };
+		ADBD3D072209BB4D0009AAA3 /* CustomSegmentedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedItemView.swift; sourceTree = "<group>"; };
+		ADBD3D092209C3020009AAA3 /* ContentWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWidth.swift; sourceTree = "<group>"; };
 		ADE9123122009D8400971E4D /* TextMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageTableViewCell.swift; sourceTree = "<group>"; };
 		ADE9123322009E2300971E4D /* MyTextMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTextMessageTableViewCell.xib; sourceTree = "<group>"; };
 		ADE912352200A16400971E4D /* OponentTetxMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OponentTetxMessageTableViewCell.xib; sourceTree = "<group>"; };
@@ -410,6 +416,15 @@
 			path = HeaderTitleView;
 			sourceTree = "<group>";
 		};
+		ADBD3D042209B6910009AAA3 /* CustomSegmentedControll */ = {
+			isa = PBXGroup;
+			children = (
+				ADBD3D052209B6D20009AAA3 /* CustomSegmentedControll.swift */,
+				ADBD3D072209BB4D0009AAA3 /* CustomSegmentedItemView.swift */,
+			);
+			path = CustomSegmentedControll;
+			sourceTree = "<group>";
+		};
 		ADE9123022009D5000971E4D /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +538,7 @@
 		ADF19D8C21DE524D008B7455 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				ADBD3D042209B6910009AAA3 /* CustomSegmentedControll */,
 				AD2612CA2201DED400DECD95 /* Header */,
 				AD2612BF2201DB7F00DECD95 /* Footers */,
 				AD2B1AB321F4B6F700DE6246 /* UserHeader */,
@@ -538,15 +554,16 @@
 			isa = PBXGroup;
 			children = (
 				AD3370E221E2803000EA3F96 /* RegisterModel.swift */,
+				AD17169221FB7D95003DCEE5 /* PSUser.swift */,
 				AD3370E421E2809200EA3F96 /* Sex.swift */,
 				AD3370F421E518DA00EA3F96 /* FirebaseResult.swift */,
 				AD2B1ABE21F6024700DE6246 /* Custom Errors.swift */,
-				AD2B1ACB21F742DA00DE6246 /* Post.swift */,
-				AD17168921FA3F58003DCEE5 /* CreatePostModel.swift */,
-				AD17169021FB7718003DCEE5 /* UserManager.swift */,
-				AD17169221FB7D95003DCEE5 /* PSUser.swift */,
-				AD17169921FCE7DC003DCEE5 /* Message.swift */,
+				ADBD3D092209C3020009AAA3 /* ContentWidth.swift */,
 				AD1716A121FE5010003DCEE5 /* Chat.swift */,
+				AD17168921FA3F58003DCEE5 /* CreatePostModel.swift */,
+				AD2B1ACB21F742DA00DE6246 /* Post.swift */,
+				AD17169021FB7718003DCEE5 /* UserManager.swift */,
+				AD17169921FCE7DC003DCEE5 /* Message.swift */,
 				AD2612CF22035E3300DECD95 /* LoginModel.swift */,
 			);
 			path = Models;
@@ -819,6 +836,7 @@
 				AD3370E521E2809200EA3F96 /* Sex.swift in Sources */,
 				AD2B1AC821F737F900DE6246 /* PostManager.swift in Sources */,
 				AD2B1AD321F7D62000DE6246 /* PostTableViewCell.swift in Sources */,
+				ADBD3D082209BB4D0009AAA3 /* CustomSegmentedItemView.swift in Sources */,
 				AD1716A221FE5010003DCEE5 /* Chat.swift in Sources */,
 				AD2B1ACA21F73AEE00DE6246 /* FirebaseManager.swift in Sources */,
 				AD17168E21FB74C3003DCEE5 /* ChatsViewController.swift in Sources */,
@@ -856,11 +874,13 @@
 				AD17169121FB7718003DCEE5 /* UserManager.swift in Sources */,
 				AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */,
 				AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */,
+				ADBD3D0A2209C3020009AAA3 /* ContentWidth.swift in Sources */,
 				AD2B1ABF21F6024700DE6246 /* Custom Errors.swift in Sources */,
 				AD2B12292208D525006D634F /* AddPhoto.swift in Sources */,
 				AD17169E21FE4941003DCEE5 /* ChatController.swift in Sources */,
 				AD3370E321E2803000EA3F96 /* RegisterModel.swift in Sources */,
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,
+				ADBD3D062209B6D20009AAA3 /* CustomSegmentedControll.swift in Sources */,
 				AD2B1AD721F8562B00DE6246 /* Extentions+TextView.swift in Sources */,
 				AD2B1AB921F4FCFC00DE6246 /* BiometricAuthManager .swift in Sources */,
 				AD17169321FB7D95003DCEE5 /* PSUser.swift in Sources */,

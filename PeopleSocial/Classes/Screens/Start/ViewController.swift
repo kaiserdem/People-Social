@@ -18,7 +18,17 @@ class ViewController: UIViewController {
     Decorator.decorator(_vc: self)
     addTargets()
     
+    let item = CustomSegmentedControll.Item(title: "Men", image: UIImage(named: "mars")!)
+    let item1 = CustomSegmentedControll.Item(title: "Momen", image: UIImage(named: "femenine")!)
+
+    let segmentedControll = CustomSegmentedControll(items: [item, item1])
+    segmentedControll.translatesAutoresizingMaskIntoConstraints = false
+    self.view.addSubview(segmentedControll)
+    
+    let constraints = NSLayoutConstraint.constrains(withNewVisyalFormat: "V:|-150-[v],H:|[v]", dict: ["v" : segmentedControll])
+    self.view.addConstraints(constraints)
   }
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)// приячим навигейшен бар
     navigationController?.setNavigationBarHidden(true, animated: true)
@@ -27,15 +37,15 @@ class ViewController: UIViewController {
   private func addTargets() {
     singInButton.addTarget(self, action: #selector(singInButtoClicked), for: .touchUpInside)
     registerButton.addTarget(self, action: #selector(registerButtoClicked), for: .touchUpInside)
-    }
-  
-    @objc private func singInButtoClicked() {
-      StartRouter.shared.goToLoginScreen(from: self)
-    }
-    @objc private func registerButtoClicked() {
-      StartRouter.shared.goToRegisterScreen(from: self)
-    }
   }
+  
+  @objc private func singInButtoClicked() {
+    StartRouter.shared.goToLoginScreen(from: self)
+  }
+  @objc private func registerButtoClicked() {
+    StartRouter.shared.goToRegisterScreen(from: self)
+  }
+}
 
 extension ViewController {
   fileprivate class Decorator {
