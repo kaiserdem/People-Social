@@ -31,6 +31,8 @@
 		AD2612C92201DE2A00DECD95 /* TitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2612C82201DE2A00DECD95 /* TitleHeaderView.xib */; };
 		AD2612CC2201E44200DECD95 /* Extention+UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2612CB2201E44200DECD95 /* Extention+UINavigationBar.swift */; };
 		AD2612D022035E3300DECD95 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2612CF22035E3300DECD95 /* LoginModel.swift */; };
+		AD2B12292208D525006D634F /* AddPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B12272208D525006D634F /* AddPhoto.swift */; };
+		AD2B122A2208D525006D634F /* AddPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B12282208D525006D634F /* AddPhoto.xib */; };
 		AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */; };
 		AD2B1AB221F4B39800DE6246 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */; };
 		AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */; };
@@ -90,8 +92,6 @@
 		ADF19DAB21DE7388008B7455 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DAA21DE7388008B7455 /* NibLoadable.swift */; };
 		ADF19DAD21DE75BA008B7455 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DAC21DE75BA008B7455 /* Typealias.swift */; };
 		ADF19DAF21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DAE21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift */; };
-		ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF19DB621DE8265008B7455 /* InfoUserTableViewCell.swift */; };
-		ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF19DB721DE8265008B7455 /* InfoUserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +131,8 @@
 		AD2612C82201DE2A00DECD95 /* TitleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleHeaderView.xib; sourceTree = "<group>"; };
 		AD2612CB2201E44200DECD95 /* Extention+UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UINavigationBar.swift"; sourceTree = "<group>"; };
 		AD2612CF22035E3300DECD95 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		AD2B12272208D525006D634F /* AddPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhoto.swift; sourceTree = "<group>"; };
+		AD2B12282208D525006D634F /* AddPhoto.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhoto.xib; sourceTree = "<group>"; };
 		AD2B1AAF21F4B39800DE6246 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		AD2B1AB021F4B39800DE6246 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		AD2B1AB421F4B73500DE6246 /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
@@ -194,8 +196,6 @@
 		ADF19DAA21DE7388008B7455 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		ADF19DAC21DE75BA008B7455 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		ADF19DAE21DE7624008B7455 /* Evtentions+NSLayautConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Evtentions+NSLayautConstraint.swift"; sourceTree = "<group>"; };
-		ADF19DB621DE8265008B7455 /* InfoUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUserTableViewCell.swift; sourceTree = "<group>"; };
-		ADF19DB721DE8265008B7455 /* InfoUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoUserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +296,15 @@
 				AD2612C52201DDDD00DECD95 /* Title */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		AD2B12262208D4F5006D634F /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B12272208D525006D634F /* AddPhoto.swift */,
+				AD2B12282208D525006D634F /* AddPhoto.xib */,
+			);
+			path = AddPhoto;
 			sourceTree = "<group>";
 		};
 		AD2B1AAE21F4B31300DE6246 /* Feed */ = {
@@ -500,13 +509,13 @@
 		ADF19D8B21DE5240008B7455 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AD2B12262208D4F5006D634F /* AddPhoto */,
 				AD2612BA2200F2EB00DECD95 /* DetailFieldCell */,
 				ADE9123022009D5000971E4D /* Chat */,
 				AD2B1AD521F7D62E00DE6246 /* PostTableViewCell */,
 				AD3370DB21E2645E00EA3F96 /* TextFieldCell */,
 				AD3370D621E2592E00EA3F96 /* TextCell */,
 				AD3370D121E249C100EA3F96 /* SegmentCell */,
-				ADF19DB521DE823F008B7455 /* InfoUserCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -617,15 +626,6 @@
 			path = PhotoView;
 			sourceTree = "<group>";
 		};
-		ADF19DB521DE823F008B7455 /* InfoUserCell */ = {
-			isa = PBXGroup;
-			children = (
-				ADF19DB621DE8265008B7455 /* InfoUserTableViewCell.swift */,
-				ADF19DB721DE8265008B7455 /* InfoUserTableViewCell.xib */,
-			);
-			path = InfoUserCell;
-			sourceTree = "<group>";
-		};
 		E8F32F924432343DFB0D2791 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +717,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2B122A2208D525006D634F /* AddPhoto.xib in Resources */,
 				ADE9123422009E2300971E4D /* MyTextMessageTableViewCell.xib in Resources */,
 				AD2612BE2200F81800DECD95 /* DetailFieldTableViewCell.xib in Resources */,
 				ADF19D4521DE4E87008B7455 /* LaunchScreen.storyboard in Resources */,
@@ -726,7 +727,6 @@
 				ADE9123B2200AE5F00971E4D /* UsersViewController.xib in Resources */,
 				ADE912362200A16400971E4D /* OponentTetxMessageTableViewCell.xib in Resources */,
 				AD2B1AB521F4B73500DE6246 /* UserHeaderView.xib in Resources */,
-				ADF19DB921DE8265008B7455 /* InfoUserTableViewCell.xib in Resources */,
 				AD2B1AD421F7D62000DE6246 /* PostTableViewCell.xib in Resources */,
 				AD2B1AC621F7325D00DE6246 /* CreatePostViewController.xib in Resources */,
 				AD17169721FCE1E6003DCEE5 /* ChatViewController.xib in Resources */,
@@ -835,7 +835,6 @@
 				AD1716A021FE4B1D003DCEE5 /* Lifecyclable.swift in Sources */,
 				AD2612C12201DBDA00DECD95 /* TextFooterView.swift in Sources */,
 				AD1716A421FE6C08003DCEE5 /* ChatDataProvider.swift in Sources */,
-				ADF19DB821DE8265008B7455 /* InfoUserTableViewCell.swift in Sources */,
 				ADF19D3D21DE4E85008B7455 /* ViewController.swift in Sources */,
 				ADF19DA921DE71EF008B7455 /* HeigtContainable.swift in Sources */,
 				AD17169A21FCE7DC003DCEE5 /* Message.swift in Sources */,
@@ -858,6 +857,7 @@
 				AD2B1AB121F4B39800DE6246 /* FeedViewController.swift in Sources */,
 				AD3370D921E2594B00EA3F96 /* TextTableViewCell.swift in Sources */,
 				AD2B1ABF21F6024700DE6246 /* Custom Errors.swift in Sources */,
+				AD2B12292208D525006D634F /* AddPhoto.swift in Sources */,
 				AD17169E21FE4941003DCEE5 /* ChatController.swift in Sources */,
 				AD3370E321E2803000EA3F96 /* RegisterModel.swift in Sources */,
 				ADF19D3B21DE4E85008B7455 /* AppDelegate.swift in Sources */,

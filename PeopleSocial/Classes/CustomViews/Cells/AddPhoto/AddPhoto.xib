@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AddPhoto" customModule="PeopleSocial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="167.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmc-us-EQn">
+                        <rect key="frame" x="119" y="19" width="82" height="129.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFC-I0-vAa">
+                                <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="5ZV-rE-6v9">
+                                        <rect key="frame" x="20" y="20" width="42" height="42"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="grayColor"/>
+                                <constraints>
+                                    <constraint firstItem="5ZV-rE-6v9" firstAttribute="leading" secondItem="CFC-I0-vAa" secondAttribute="leading" constant="20" id="7uw-qX-fVF"/>
+                                    <constraint firstAttribute="trailing" secondItem="5ZV-rE-6v9" secondAttribute="trailing" constant="20" id="Gom-8q-UsE"/>
+                                    <constraint firstAttribute="bottom" secondItem="5ZV-rE-6v9" secondAttribute="bottom" constant="20" id="jft-GT-SeN"/>
+                                    <constraint firstItem="5ZV-rE-6v9" firstAttribute="top" secondItem="CFC-I0-vAa" secondAttribute="top" constant="20" id="qGN-tY-4oc"/>
+                                    <constraint firstAttribute="width" secondItem="CFC-I0-vAa" secondAttribute="height" multiplier="1:1" id="ui8-ve-ibG"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQE-Ib-D29">
+                                <rect key="frame" x="0.0" y="82" width="82" height="47.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="brightBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CQE-Ib-D29" firstAttribute="centerX" secondItem="CFC-I0-vAa" secondAttribute="centerX" id="5Uv-Bg-rE7"/>
+                            <constraint firstItem="CQE-Ib-D29" firstAttribute="top" secondItem="CFC-I0-vAa" secondAttribute="bottom" id="BGb-fL-m5P"/>
+                            <constraint firstAttribute="trailing" secondItem="CFC-I0-vAa" secondAttribute="trailing" id="Oga-Vp-GB4"/>
+                            <constraint firstItem="CQE-Ib-D29" firstAttribute="leading" secondItem="CFC-I0-vAa" secondAttribute="leading" id="epB-7Y-vQb"/>
+                            <constraint firstItem="CFC-I0-vAa" firstAttribute="top" secondItem="xmc-us-EQn" secondAttribute="top" id="ihs-u8-FeG"/>
+                            <constraint firstItem="CFC-I0-vAa" firstAttribute="leading" secondItem="xmc-us-EQn" secondAttribute="leading" id="krR-f4-VDX"/>
+                            <constraint firstAttribute="bottom" secondItem="CQE-Ib-D29" secondAttribute="bottom" id="mlR-U4-Vts"/>
+                            <constraint firstItem="CQE-Ib-D29" firstAttribute="top" secondItem="CFC-I0-vAa" secondAttribute="bottom" id="o7D-pU-sLG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xmc-us-EQn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="7Zd-yr-uVb"/>
+                    <constraint firstItem="xmc-us-EQn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="119" id="bkC-a5-hov"/>
+                    <constraint firstItem="xmc-us-EQn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nhx-nb-MWT"/>
+                    <constraint firstItem="xmc-us-EQn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uDB-wz-W57"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cameraImageView" destination="5ZV-rE-6v9" id="Ksh-tP-L0o"/>
+                <outlet property="circleBackground" destination="CFC-I0-vAa" id="DsC-3A-HO4"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="48.575712143928037"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="camera" width="64" height="64"/>
+        <namedColor name="brightBlue">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayColor">
+            <color red="0.90196078431372551" green="0.92156862745098034" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

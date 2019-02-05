@@ -24,7 +24,6 @@ class RegisterViewController: UIViewController, NibLoadable {
   
   override func viewDidLoad() {
         super.viewDidLoad()
-    title = "Registration"
 
     Decorator.decorate(vc: self)
     registerCells()
@@ -32,9 +31,17 @@ class RegisterViewController: UIViewController, NibLoadable {
     configureDatePickerView()
     addRightBarButton()
     updateDoneButtonStatus() // статус кнопки Done
-
-
+    addHeaderView()
   }
+  private func addHeaderView() { // добавить титул, верхний елемент
+    let headerView = TitleHeaderView.loadFromNib()
+    headerView.set(text: "New Account")
+    let height: CGFloat =  100
+    let width = view.frame.size.width
+    headerView.frame.size = CGSize(width: width, height: height)
+    tableView.tableHeaderView = headerView
+  }
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated) // приячим навигейшен бар
     navigationController?.setNavigationBarHidden(false, animated: true)
@@ -141,8 +148,9 @@ extension RegisterViewController {
     static func decorate(vc: RegisterViewController) {
       vc.tableView.keyboardDismissMode = .onDrag // по свайпу клавиатура скрываеться
       vc.tableView.separatorColor = .clear // края таблицы не видно
-      vc.tableView.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.9450980392, blue: 0.9450980392, alpha: 1) // цвет таблицы
+      vc.tableView.backgroundColor = .white // цвет таблицы
       vc.navigationController?.navigationBar.prefersLargeTitles = true
+      vc.navigationController?.navigationBar.makeClear() // прозрачный нав бар
       vc.tableView.contentInset = UIEdgeInsets(top: tableViewTopInsert, left: 0, bottom: 0, right: 0)
     }
   }
